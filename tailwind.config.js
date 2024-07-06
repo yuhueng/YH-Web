@@ -1,10 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-// tailwind.config.js
+
 import daisyui from "daisyui";
+import typography from "@tailwindcss/typography";
+import forms from "@tailwindcss/forms";
+import colors from "tailwindcss/colors";
+
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/versoly-ui/**/*.js",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ...colors,
+      },
+    },
   },
-  plugins: [daisyui],
+  plugins: [daisyui, typography, forms],
 };
