@@ -2,3 +2,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-container {
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(75, 85, 99, 0.6);
+}
+
+.header-logo {
+  height: 100px;
+  width: auto;
+}
+
+.header-right {
+}
+
+.header-right-navitem {
+  font-size: 20px;
+  font-weight: 600; /* font-semibold */
+  transition: color 0.2s ease-in;
+}
+
+.header-right-navitem:hover {
+  font-weight: 800;
+  color: #8b9177;
+  text-decoration: underline;
+}
+
+.header-right-navitem-special {
+  font-size: 20px;
+  font-weight: 600; /* font-semibold */
+  transition: color 0.2s ease-in;
+  border-radius: 25px;
+  border-width: 1px;
+  border-color: #99a083;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+@media (max-width: 900px) {
+  /* Make Menu Button */
+}

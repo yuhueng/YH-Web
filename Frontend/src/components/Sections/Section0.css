@@ -1,0 +1,87 @@
+.header-margin {
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+.sectionzero-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 80vh;
+}
+.sectionzero-container-left {
+  width: 100%;
+}
+.sectionzero-container-left-top {
+  border-radius: 25px;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.sectionzero-container-left-top-1 {
+  padding-right: 55%;
+}
+.sectionzero-container-left-top-3 {
+  padding-left: 30%;
+}
+
+.sectionzero-container-left-bottom {
+  height: 60%;
+}
+.sectionzero-container-left-bottom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+#demo-svg path {
+  stroke-dasharray: 3750;
+}
+
+/* SectionOne About Reference */
+.sectionone-anchor {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* .sectionzero-container-right {
+  width: 25%;
+}
+.sectionzero-container-right-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px 25px 25px 0;
+} */
+
+/* @media (max-width: 900px) {
+  .sectionzero-section {
+    margin-top: 100px;
+  }
+  .sectionzero-container {
+    flex-direction: col;
+  }
+  .sectionzero-container-left {
+    width: 100%;
+    gap: 2rem;
+    transition: 0.7s ease-out;
+  }
+  .sectionzero-container-left-top-1 {
+    padding-right: 0%;
+  }
+  .sectionzero-container-left-top-3 {
+    padding-left: 0%;
+  }
+  .sectionzero-container-left-bottom-img {
+    border-radius: 25px 25px 25px 25px;
+  }
+  .sectionzero-container-right {
+    display: none;
+  }
+} */
