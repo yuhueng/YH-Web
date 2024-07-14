@@ -5,17 +5,19 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.sectionthree-projects {
-}
-
 .projects-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   width: 100%;
 }
 
+.individualproject-container {
+  display: grid;
+  place-items: center; /* Center both horizontally and vertically */
+}
 /* Individual Project CSS */
 .project {
   align-items: center;
@@ -26,6 +28,13 @@
   border-width: 2px;
   padding: 1rem;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-main{
+  display: flex;
+  flex-direction: row;
 }
 
 .project-title {
@@ -45,13 +54,11 @@
 
 .project-desc-tag {
   width: 100%;
-  font-size: 22px;
   text-decoration: underline;
   padding-top: 1rem;
 }
 .project-desc {
-  width: 100%;
-  font-size: 20px;
+  width: 100%;  
 }
 
 .projectimage-container {
@@ -70,8 +77,22 @@
 .icon-deco {
   padding-top: 0.5rem;
   color: black;
+  font-size: clamp(30px, 5vw, 70px);
+  padding-right: 7px;
 }
 .icon-deco:hover {
   color: #99a083;
-  font-size: 70px;
+}
+
+@media only screen and (max-width: 552px) {
+  .projectimage-container {
+    display: none;
+    transition: 0.6s ease-in-out;
+  }
+  .individualproject-desc {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+  
 }

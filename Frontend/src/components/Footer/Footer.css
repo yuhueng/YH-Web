@@ -3,12 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.footer-container {
-  background-color: black;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 /* Container styles */
 .container {
   width: 100%;
@@ -32,90 +26,4 @@
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-/* Text center alignment */
-.text-center {
-  text-align: center;
-}
-
-/* Link styles */
-.block {
-  display: block;
-}
-
-.h5 {
-  font-size: 1.25rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-white {
-  color: #fff;
-}
-
-/* Link group styles */
-.link-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  gap: 0.75rem;
-}
-
-@media (min-width: 768px) {
-  .link-group {
-    flex-direction: row;
-  }
-}
-
-.link {
-  padding: 0 1rem;
-  text-decoration: none;
-  color: #fff;
-}
-
-/* Text styles */
-.text-sm {
-  font-size: 0.875rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0;
-}
-
-/* Social group styles */
-.social-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  gap: 0.75rem;
-}
-
-@media (min-width: 768px) {
-  .social-group {
-    flex-direction: row;
-  }
-}
-
-.social-link {
-  color: #fff;
-  margin: 0 0.5rem;
-  font-size: 1.875rem; /* 3xl size */
-  text-decoration: none;
-}
-
-.social-link:hover {
-  color: #ddd; /* Add hover effect */
 }

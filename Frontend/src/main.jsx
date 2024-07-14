@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Section3 />
 
     <Footer />
-    <TestSection2 />
+    {/* <TestSection2 /> */}
     {/* <TestSection1 /> */}
     {/* Make Your Own Component */}
     <script src="../path/to/versoly-ui/dist/versoly-ui.js"></script>

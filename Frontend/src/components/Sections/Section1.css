@@ -3,7 +3,6 @@
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  height: 60vh;
 }
 .sectionone-container-main {
   padding-top: 2rem;
@@ -38,13 +37,15 @@
 }
 
 .sectionone-container-right-button-div {
-  padding: 3rem 4rem 1rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionone-container-right-button {
   border-radius: 40px;
   border-color: #8d7a69;
-  border-width: 3px;
+  border-width: 1px;
   background-color: #fefae0;
   padding: 1rem;
   font-weight: 550;
@@ -65,4 +66,15 @@
   background-color: black;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 552px) {
+  .sectionone-container-right-header {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+  
+  .sectionone-container-right-text {
+    padding: 1rem 2rem 0.5rem 2rem;
+    transition: 0.3s ease-in-out;
+  }
 }

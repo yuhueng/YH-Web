@@ -88,7 +88,7 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-      <div id="projects" className="sectiontwo-anchor"></div>
+      {/* <div id="projects" className="sectiontwo-anchor"></div> */}
     </div>
   );
 };

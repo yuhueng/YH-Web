@@ -2,49 +2,27 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer-container" id="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col text-center">
-            <a className="block h5 mb-6 font-semibold text-white" href="#">
-              Acme Company
-            </a>
-            <div className="link-group">
-              <a className="link" href="#">
-                Sign Up
-              </a>
-              <a className="link" href="#">
-                Terms
-              </a>
-              <a className="link" href="#">
-                Privacy
-              </a>
-              <a className="link" href="#">
-                Contact Us
-              </a>
-              <a className="link" href="#">
-                Docs
-              </a>
+    <footer className="bg-mossgreen text-white py-6" id="footer">
+    <div className="container">
+        <div className="row justify-between">
+            <div className="col md:w-9/12">
+                <p>© 2024 Ng Yu Hueng. </p>
             </div>
-            <div className="text-center text-white text-sm mb-6">
-              <p className="mb-0">© 2024 Acme Company.</p>
-              <p>All rights reserved</p>
+            <div className="col md:w-3/12 flex md:justify-end">
+                <a className="text-white" href= "#" title="github">
+                    <i className="fab fa-github-square text-5xl pr-2"></i>
+                </a>
+                <a className="text-white" href="#" title="linkedin">
+                    <i className="fab fa-linkedin text-5xl pr-2"></i>
+                </a>
+                <a className="text-white" href="#" title="Instagram">
+                    <i className="fab fa-instagram text-5xl pr-2"></i>
+                </a>
             </div>
-            <div className="social-group">
-              <a className="social-link" href="#" title="facebook">
-                <i className="fab fa-facebook-square text-3xl"></i>
-              </a>
-              <a className="social-link" href="#" title="twitter">
-                <i className="fab fa-twitter-square text-3xl"></i>
-              </a>
-              <a className="social-link" href="#" title="instagram">
-                <i className="fab fa-instagram text-3xl"></i>
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </footer>
+    </div>
+</footer>
+                        
   );
 }
 

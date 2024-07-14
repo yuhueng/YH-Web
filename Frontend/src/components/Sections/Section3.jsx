@@ -5,14 +5,16 @@ import "./Section3.css";
 import projects from "./ProjectData.js";
 
 const Section3 = () => {
+  console.log("Section3")
   return (
+    
     <div className="sectionthree-section bg-cornsilk">
       <div className="max-w-screen-2xl mx-auto">
         <div className="sectionthree-container flex flex-col">
           <div className="sectionthree-projects text-center text-mossgreen underline underline-offset-8">
             <h2>Past Projects</h2>
           </div>
-          <div className="projects-container flex flex-col">
+          <div className="projects-container">
             {projects.map((project) => (
               <IndividualProjects key={project.id} project={project} />
             ))}
@@ -30,15 +32,15 @@ const IndividualProjects = ({ project }) => {
     offset: ["start end", "end end"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <motion.div ref={ref} className="project flex flex-col" style={{ scale }}>
+    <motion.div ref={ref} className="individualproject-container" style={{ scale }}>
       {project.id % 2 === 0 ? (
-        <div className="flex flex-col">
+        <div className="project">
           <h4 className="project-title">{project.title}</h4>
           <p className="project-date">{project.date}</p>
-          <div className="individualproject-container flex flex-row">
+          <div className="project-main">
             <div className="projectimage-container">
               <img
                 className="project-image"
@@ -47,13 +49,13 @@ const IndividualProjects = ({ project }) => {
               />
             </div>
             <div className="individualproject-desc flex flex-col">
-              <p className="project-desc-tag text-darkgrey">Description:</p>
+              <h5 className="project-desc-tag text-darkgrey">Description:</h5>
               <p className="project-desc text-mossgreen">{project.desc1}</p>
-              <p className="project-desc-tag text-darkgrey">Achievements:</p>
+              <h5 className="project-desc-tag text-darkgrey">Achievements:</h5>
               <p className="project-desc text-mossgreen">{project.desc2}</p>
-              <p className="project-desc-tag text-darkgrey">
+              <h5 className="project-desc-tag text-darkgrey">
                 Project Repo and More:
-              </p>
+              </h5>
               <div className="project-links flex flex-row">
                 {project.github && (
                   <a
@@ -63,7 +65,7 @@ const IndividualProjects = ({ project }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="icon-deco fab fa-github-square text-7xl"></i>
+                    <i className="icon-deco fab fa-github-square"></i>
                   </a>
                 )}
                 {project.linkedin && (
@@ -74,7 +76,7 @@ const IndividualProjects = ({ project }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="icon-deco fab fa-linkedin text-7xl"></i>
+                    <i className="icon-deco fab fa-linkedin"></i>
                   </a>
                 )}
                 {!project.github && !project.linkedin && (
@@ -83,26 +85,26 @@ const IndividualProjects = ({ project }) => {
                   </p>
                 )}
               </div>
-              <p className="project-desc-tag text-darkgrey">
+              <h5 className="project-desc-tag text-darkgrey">
                 Technologies Used:
-              </p>
+              </h5>
               <div className="techstack-icons flex flex-row"></div>
             </div>
           </div>
         </div>
       ) : (
-        <div className="flex flex-col">
-          <h4 className=" project-title text-right">{project.title}</h4>
-          <p className="project-date text-right">{project.date}</p>
-          <div className="flex flex-row">
+        <div className="project">
+          <h4 className=" project-title">{project.title}</h4>
+          <p className="project-date">{project.date}</p>
+          <div className="project-main">
             <div className="individualproject-desc flex flex-col">
-              <p className="project-desc-tag text-darkgrey">Description:</p>
+              <h5 className="project-desc-tag text-darkgrey">Description:</h5>
               <p className="project-desc text-mossgreen">{project.desc1}</p>
-              <p className="project-desc-tag text-darkgrey">Achievements:</p>
+              <h5 className="project-desc-tag text-darkgrey">Achievements:</h5>
               <p className="project-desc text-mossgreen">{project.desc2}</p>
-              <p className="project-desc-tag text-darkgrey">
+              <h5 className="project-desc-tag text-darkgrey">
                 Project Repo and More:
-              </p>
+              </h5>
               <div className="project-links flex flex-row">
                 {project.github && (
                   <a
@@ -112,7 +114,7 @@ const IndividualProjects = ({ project }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="icon-deco fab fa-github-square text-7xl"></i>
+                    <i className="icon-deco fab fa-github-square "></i>
                   </a>
                 )}
                 {project.linkedin && (
@@ -123,7 +125,7 @@ const IndividualProjects = ({ project }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="icon-deco fab fa-linkedin text-7xl"></i>
+                    <i className="icon-deco fab fa-linkedin"></i>
                   </a>
                 )}
                 {!project.github && !project.linkedin && (
@@ -132,9 +134,9 @@ const IndividualProjects = ({ project }) => {
                   </p>
                 )}
               </div>
-              <p className="project-desc-tag text-darkgrey">
+              <h5 className="project-desc-tag text-darkgrey">
                 Technologies Used:
-              </p>
+              </h5>
               <div className="techstack-icons flex flex-row"></div>
             </div>
             <div className="projectimage-container">

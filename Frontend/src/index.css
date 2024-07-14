@@ -7,6 +7,10 @@ html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-size: 8px;
+  margin: 0;
+  padding: 0;
+
 }
 
 .p,
@@ -19,32 +23,6 @@ h6,
 a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-}
-
-p,
-a {
-  font-size: 26px;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 80px;
-  font-weight: 800;
-}
-
-h2 {
-  font-size: 46px;
-  font-weight: 650;
-}
-
-h3 {
-  font-size: 42px;
-  font-weight: 500;
-}
-
-h4 {
-  font-size: 32px;
-  font-weight: 500;
 }
 
 .text-cornsilk {
@@ -111,4 +89,148 @@ h4 {
   color: #9ca3af;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+}
+
+
+/* Default styles for screens wider than 1537px */
+h1 {
+  font-size: 7rem;
+  font-weight: 800;
+}
+h2 {
+  font-size: 5rem;
+  font-weight: 650;
+}
+h3 {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+h4 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+p,
+a {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Styles for screens between 992px and 1536px */
+@media only screen and (max-width: 1537px) {
+  h1 {
+    font-size: 6rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: 650;
+  }
+  h3 {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  h5 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  p,
+  a {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+/* Styles for screens between 768px and 991px */
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 650;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  h5 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  p,
+  a {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+/* Styles for screens between 480px and 767px */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 650;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  p,
+  a {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+}
+
+/* Styles for screens less than 480px */
+@media only screen and (max-width: 552px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 650;
+  }
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  p,
+  a {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
 }
