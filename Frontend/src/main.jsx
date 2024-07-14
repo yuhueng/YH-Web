@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer.jsx";
 // import TestSection1 from "./components/Tests/TestSection1.jsx";
 import "./index.css";
 import "versoly-ui";
+import TestSection2 from "./components/Tests/TestSection2.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Section3 />
 
     <Footer />
+    <TestSection2 />
     {/* <TestSection1 /> */}
     {/* Make Your Own Component */}
     <script src="../path/to/versoly-ui/dist/versoly-ui.js"></script>
