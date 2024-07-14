@@ -1,0 +1,77 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+.sectionthree-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.sectionthree-projects {
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+/* Individual Project CSS */
+.project {
+  align-items: center;
+  transition: transform 0.3s, opacity 0.3s;
+  width: 90%;
+  border-color: #99a083;
+  border-radius: 25px;
+  border-width: 2px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.project-title {
+  color: #8d7a69;
+  font-weight: 600;
+}
+.project-date {
+  color: #8d7a69;
+  font-weight: 500;
+}
+
+.individualproject-desc {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 65%;
+}
+
+.project-desc-tag {
+  width: 100%;
+  font-size: 22px;
+  text-decoration: underline;
+  padding-top: 1rem;
+}
+.project-desc {
+  width: 100%;
+  font-size: 20px;
+}
+
+.projectimage-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.icon-deco {
+  padding-top: 0.5rem;
+  color: black;
+}
+.icon-deco:hover {
+  color: #99a083;
+  font-size: 70px;
+}

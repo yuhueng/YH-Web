@@ -89,7 +89,7 @@ const Section0 = () => {
           </div> */}
         </div>
       </div>
-      <div id="about" className="sectionone-anchor"></div>
+      <div id="about" className="sectiontwo-anchor"></div>
     </div>
   );
 };
