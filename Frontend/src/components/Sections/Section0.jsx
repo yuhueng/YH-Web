@@ -3,12 +3,6 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import anime from "animejs";
 
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import DeskAndComputer from '../ThreeJS/DeskAndComputer';
-import AnimatedFigure from '../ThreeJS/AnimatedFigure';
-import ModelViewer from '../ThreeJS/test.jsx';
-
 const Section0 = () => {
   useEffect(() => {
     ScrollReveal().reveal(".sectionzero-container-top-2", {
