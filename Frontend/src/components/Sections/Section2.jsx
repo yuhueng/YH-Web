@@ -2,7 +2,8 @@ import { useRef } from "react";
 import PropTypes from "prop-types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "./Section2.css";
-import projects from "./ProjectData.js";
+import projects from "../../shared-data/ProjectData.js";
+import techstackicons from "../../shared-data/TechStackData.js";
 
 const Section2 = () => {
   return (
@@ -18,6 +19,7 @@ const Section2 = () => {
               <IndividualProjects key={project.id} project={project} />
             ))}
           </div>
+          <div id="" className="sectionthree-anchor"></div>
         </div>
       </div>
     </div>
@@ -48,13 +50,17 @@ const IndividualProjects = ({ project }) => {
               />
             </div>
             <div className="individualproject-desc flex flex-col">
-              <h5 className="project-desc-tag text-darkgrey">Description:</h5>
+              <h6 className="project-desc-tag text-darkgrey">Description:</h6>
               <p className="project-desc text-mossgreen">{project.desc1}</p>
-              <h5 className="project-desc-tag text-darkgrey">Achievements:</h5>
-              <p className="project-desc text-mossgreen">{project.desc2}</p>
-              <h5 className="project-desc-tag text-darkgrey">
-                Project Repo and More:
-              </h5>
+              {project.desc2 && (
+                  <div>
+                    <h6 className="project-desc-tag text-darkgrey">Achievements:</h6>
+                    <p className="project-desc text-mossgreen">{project.desc2}</p>
+                  </div>
+                )}
+              <h6 className="project-desc-tag text-darkgrey">
+                Links:
+              </h6>
               <div className="project-links flex flex-row">
                 {project.github && (
                   <a
@@ -84,10 +90,18 @@ const IndividualProjects = ({ project }) => {
                   </p>
                 )}
               </div>
-              <h5 className="project-desc-tag text-darkgrey">
+              <h6 className="project-desc-tag text-darkgrey">
                 Technologies Used:
-              </h5>
-              <div className="techstack-icons flex flex-row"></div>
+              </h6>
+              <div className="techstack-icons">
+                  {project.techstack.map((techstackicon) => (
+                    <img
+                      key={techstackicon}
+                      className="TechstackIcon"
+                      src={techstackicons[techstackicon]}
+                    />
+                  ))} 
+              </div>
             </div>
           </div>
         </div>
@@ -97,13 +111,19 @@ const IndividualProjects = ({ project }) => {
           <p className="project-date">{project.date}</p>
           <div className="project-main">
             <div className="individualproject-desc flex flex-col">
-              <h5 className="project-desc-tag text-darkgrey">Description:</h5>
+              <h6 className="project-desc-tag text-darkgrey">Description:</h6>
               <p className="project-desc text-mossgreen">{project.desc1}</p>
-              <h5 className="project-desc-tag text-darkgrey">Achievements:</h5>
-              <p className="project-desc text-mossgreen">{project.desc2}</p>
-              <h5 className="project-desc-tag text-darkgrey">
-                Project Repo and More:
-              </h5>
+              
+                {project.desc2 && (
+                  <div>
+                    <h6 className="project-desc-tag text-darkgrey">Achievements:</h6>
+                    <p className="project-desc text-mossgreen">{project.desc2}</p>
+                  </div>
+                )}
+              
+              <h6 className="project-desc-tag text-darkgrey">
+               Links:
+              </h6>
               <div className="project-links flex flex-row">
                 {project.github && (
                   <a
@@ -133,10 +153,18 @@ const IndividualProjects = ({ project }) => {
                   </p>
                 )}
               </div>
-              <h5 className="project-desc-tag text-darkgrey">
+              <h6 className="project-desc-tag text-darkgrey">
                 Technologies Used:
-              </h5>
-              <div className="techstack-icons flex flex-row"></div>
+              </h6>
+              <div className="techstack-icons">
+                {project.techstack.map((techstackicon) => (
+                <img
+                  key={techstackicon}
+                  className="TechstackIcon"
+                  src={techstackicons[techstackicon]}
+                  />
+                ))}   
+              </div>
             </div>
             <div className="projectimage-container">
               <img
@@ -163,7 +191,7 @@ IndividualProjects.propTypes = {
     linkedin: PropTypes.string,
     desc1: PropTypes.string.isRequired,
     desc2: PropTypes.string.isRequired,
-    techstack: PropTypes.string,
+    techstack: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
 

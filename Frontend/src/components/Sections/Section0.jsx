@@ -49,7 +49,7 @@ const Section0 = () => {
     <div id="home" className="sectionzero-section bg-cornsilk">
       <div className="max-w-screen-2xl mx-auto">
         <div className="header-margin bg-cornsilk"></div>
-        <div className="sectionzero-container flex flex-col">
+        <div className="sectionzero-container">
           <div className="sectionzero-container-top flex flex-col">
             <div className="sectionzero-container-top-1 text-tan">
               <h2>Hey, I am</h2>
@@ -67,12 +67,22 @@ const Section0 = () => {
             <div className="sectionzero-container-top-3 text-tan">
               <h2>An Aspiring Software Engineer</h2>
             </div>
+            <div className="sectionzero-container-bottom">
+            <a className="text-black" href= "https://github.com/yuhueng" title="github" target="_blank"     rel="noopener noreferrer">
+                    <i className="sectionzero-social-links fab fa-github-square"></i>
+                </a>
+                <a className="linkedin-color" href="https://www.linkedin.com/in/ngyuhueng" title="linkedin" target="_blank" rel="noopener noreferrer">
+                    <i className="sectionzero-social-links fab fa-linkedin"></i>
+                </a>
+            </div>  
           </div>
-          <div className="sectionzero-container-bottom">
+
+
+          <div className="sectionzero-container-right">
             <img
               src="images/nyhpic3.jpg"
-              alt="NYHPIC2"
-              className="sectionzero-container-bottom-img"
+              alt="NYHPIC3"
+              className="sectionzero-container-right-img"
             />
             
             {/* <Canvas camera={{ position: [0, 5, 10], fov: 75 }}>

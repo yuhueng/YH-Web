@@ -8,3 +8,11 @@
     flex-direction: column;
     justify-content: center;
   }
+
+
+
+  /* SectionFour ContactMe Reference */
+.sectionfour-anchor {
+  height: 70px;
+  pointer-events: none;
+}

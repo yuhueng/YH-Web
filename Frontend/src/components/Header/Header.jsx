@@ -37,7 +37,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="#contacts"
                   className="header-right-navitem text-mossgreen"
                 >
                   Contacts
@@ -45,7 +45,8 @@ function Header() {
               </li>
               <li>
                 <a
-                  href="#download"
+                  href="images/Yu Hueng Resume (July 2024).pdf"
+                  download="Ng Yu Hueng Resume (July).pdf"
                   className="header-right-navitem-special text-cornsilk"
                 >
                   Download CV

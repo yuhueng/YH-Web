@@ -28,10 +28,12 @@
   align-items: center;
   transition: transform 0.3s, opacity 0.3s;
   width: 70vw;
-  border-color: #99a083;
-  border-radius: 25px;
-  border-width: 2px;
-  padding: 1rem;
+  background-color: #fff9da;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* border-width: 1px; */
+  /* border-color: #faedcd; */
+  padding: clamp(2rem, 4vw, 4rem);
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -43,6 +45,7 @@
 }
 
 .project-title {
+  text-align: center;
   color: #8d7a69;
   font-weight: 600;
 }
@@ -52,8 +55,8 @@
 }
 
 .individualproject-desc {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: clamp(2rem, 4vw, 4rem);
+  padding-right: clamp(2rem, 4vw, 4rem);
   width: 65%;
 }
 
@@ -77,16 +80,30 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 .icon-deco {
   padding-top: 0.5rem;
   color: black;
   font-size: clamp(30px, 5vw, 50px);
-  padding-right: 7px;
+  padding-right: 20px;
 }
 .icon-deco:hover {
   color: #99a083;
+}
+.techstack-icons{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.TechstackIcon {
+  object-fit: contain;
+  height: clamp(25px, 5vw, 40px);
+  width: clamp(25px, 5vw, 40px);
+  margin: 5px;
 }
 
 @media only screen and (max-width: 552px) {
@@ -99,5 +116,10 @@
     padding-right: 2rem;
     width: 100%;
   }
-  
+}
+
+/* SectionThree TechStack Reference */
+.sectionthree-anchor {
+  height: 70px;
+  pointer-events: none;
 }
