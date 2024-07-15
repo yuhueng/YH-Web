@@ -1,17 +1,23 @@
 .header-margin {
-  height: 100px;
+  height: 70px;
   visibility: hidden;
   pointer-events: none;
 }
-.sectionzero-container {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.sectionone-section{
+  display: grid;
+  place-items: center;
 }
+
 .sectionzero-container {
+  padding-top: clamp(16px, 4vw, 36px);
+  padding-bottom: clamp(16px, 4vw, 36px);
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
 .sectionzero-container-top {
   border-radius: 25px;
   justify-content: center;
@@ -19,23 +25,24 @@
 
 }
 .sectionzero-container-top-1 {
-  padding-right: 55%;
+  padding-right: clamp(0%, 30vw, 70%);
   padding-bottom: 1rem;
 }
 .sectionzero-container-top-3 {
-  padding-left: 30%;
+  padding-left: clamp(0%, 30vw, 25%);
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 .sectionzero-container-bottom {
-  height: 55%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .sectionzero-container-bottom-img {
-  width: 80%;
-  height: 100%;
+  width: 80vw;
+  height: auto;
   object-fit: cover;
   border-radius: 25px;
 }
@@ -44,66 +51,24 @@
   stroke-dasharray: 3750;
 }
 #demo-svg {
-  width: 700px;
-  height: 100px;
+  width: clamp(210px, 30vw, 700px);
+  height: clamp(30px, 10vw, 100px);
 }
 
-/* SectionOne About Reference */
-.sectionone-anchor {
-  display: block;
-  height: 100px;
-  margin-top: -100px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-@media only screen and (max-width: 1537px) {
-  #demo-svg  {
-    width: 560px;
-    height: 80px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  #demo-svg  {
-    width: 420px;
-    height: 60px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  #demo-svg  {
-    width: 350px;
-    height: 50px;
-  }
-}
-
-@media only screen and (max-width: 552px) {
-  #demo-svg  {
-    width: 280px;
-    height: 40px;
-  }
-  .sectionzero-container-top-1 {
-    padding-right: 50%;
-  }
-  .sectionzero-container-top-3 {
-    padding-left: 20%;
-    padding-bottom: 1rem;
-  }
-  
-}
-
-@media only screen and (max-width: 400px) {
-  #demo-svg  {
-    width: 210px;
-    height: 30px;
-  }
+@media only screen and (max-width: 448px) {
   .sectionzero-container-top-1 {
     padding-right: 0%;
   }
   .sectionzero-container-top-3 {
+    transition: 0.4s ease-in;
     padding-left: 0%;
     padding-bottom: 1rem;
+
   }
-  
+}
+
+/* SectionOne About Reference */
+.sectionone-anchor {
+  height: 70px;
+  pointer-events: none;
 }

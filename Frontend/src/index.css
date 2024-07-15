@@ -7,7 +7,7 @@ html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-size: 8px;
+  font-size: 4px;
   margin: 0;
   padding: 0;
 
@@ -92,145 +92,27 @@ a {
 }
 
 
-/* Default styles for screens wider than 1537px */
 h1 {
-  font-size: 7rem;
+  font-size: clamp(5rem, 3.75rem + 1.563vw, 10rem);
   font-weight: 800;
 }
 h2 {
-  font-size: 5rem;
+  font-size: clamp(4.5rem, 3.375rem + 1.406vw, 9rem);
   font-weight: 650;
 }
 h3 {
-  font-size: 4.5rem;
-  font-weight: 500;
+  font-size: clamp(4rem, 3rem + 1.25vw, 8rem);
+  font-weight: 600;
 }
 h4 {
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: clamp(3.5rem, 2.625rem + 1.094vw, 7rem);
+  font-weight: 550;
 }
 h5 {
-  font-size: 3rem;
+  font-size: clamp(3rem, 2.25rem + 0.938vw, 6rem);
   font-weight: 500;
 }
-p,
-a {
-  font-size: 2rem;
+p,a {
+  font-size: clamp(2.5rem, 1.875rem + 0.781vw, 4.5rem);
   font-weight: 400;
-}
-
-/* Styles for screens between 992px and 1536px */
-@media only screen and (max-width: 1537px) {
-  h1 {
-    font-size: 6rem;
-    font-weight: 800;
-  }
-  h2 {
-    font-size: 4rem;
-    font-weight: 650;
-  }
-  h3 {
-    font-size: 3.5rem;
-    font-weight: 500;
-  }
-  h4 {
-    font-size: 3rem;
-    font-weight: 500;
-  }
-  h5 {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-  p,
-  a {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-}
-
-/* Styles for screens between 768px and 991px */
-@media only screen and (max-width: 991px) {
-  h1 {
-    font-size: 5rem;
-    font-weight: 800;
-  }
-  h2 {
-    font-size: 3rem;
-    font-weight: 650;
-  }
-  h3 {
-    font-size: 3rem;
-    font-weight: 500;
-  }
-  h4 {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-  h5 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  p,
-  a {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-}
-
-/* Styles for screens between 480px and 767px */
-@media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 4rem;
-    font-weight: 800;
-  }
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 650;
-  }
-  h3 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  h4 {
-    font-size: 1.75rem;
-    font-weight: 500;
-  }
-  h5 {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  p,
-  a {
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
-}
-
-/* Styles for screens less than 480px */
-@media only screen and (max-width: 552px) {
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-  }
-  h2 {
-    font-size: 2rem;
-    font-weight: 650;
-  }
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-  }
-  h4 {
-    font-size: 1.1rem;
-    font-weight: 500;
-  }
-  h5 {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  p,
-  a {
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
 }

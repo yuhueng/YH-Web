@@ -1,9 +1,13 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 .sectionthree-container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: clamp(4rem, 4vw, 32px);
+  padding-bottom: clamp(16px, 4vw, 32px);
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .projects-container {
   display: flex;
@@ -12,6 +16,7 @@
   align-items: center;
   padding-top: 1rem;
   width: 100%;
+  gap: 4rem;
 }
 
 .individualproject-container {
@@ -22,7 +27,7 @@
 .project {
   align-items: center;
   transition: transform 0.3s, opacity 0.3s;
-  width: 90%;
+  width: 70vw;
   border-color: #99a083;
   border-radius: 25px;
   border-width: 2px;
@@ -77,7 +82,7 @@
 .icon-deco {
   padding-top: 0.5rem;
   color: black;
-  font-size: clamp(30px, 5vw, 70px);
+  font-size: clamp(30px, 5vw, 50px);
   padding-right: 7px;
 }
 .icon-deco:hover {

@@ -11,33 +11,38 @@
 }
 
 .header-logo {
-  height: 100px;
+  height: 70px;
   width: auto;
 }
 
 .header-right {
+  padding-right: 3rem;
 }
 
 .header-right-navitem {
-  font-size: 20px;
-  font-weight: 600; /* font-semibold */
   transition: color 0.2s ease-in;
+  padding-right: 2rem;
 }
 
 .header-right-navitem:hover {
-  font-weight: 800;
+  font-weight: 600;
   color: #8b9177;
   text-decoration: underline;
 }
 
-.header-right-navitem-special {
-  font-size: 20px;
-  font-weight: 600; /* font-semibold */
-  transition: color 0.2s ease-in;
+.header-right-navitem-special { 
+  transition: color 0.5s ease-in;
   border-radius: 25px;
-  border-width: 1px;
+  border-width: 2px;
+  background-color: #99a083;
   border-color: #99a083;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+}
+.header-right-navitem-special:hover { 
+  background-color: #fefae0;
+  color:#646854;
+  border-color: #646854;
+  padding: 0.5rem 4rem 0.5rem 4rem;
 }
 
 @media (max-width: 900px) {

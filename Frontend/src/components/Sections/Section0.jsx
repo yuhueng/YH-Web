@@ -3,6 +3,12 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import anime from "animejs";
 
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import DeskAndComputer from '../ThreeJS/DeskAndComputer';
+import AnimatedFigure from '../ThreeJS/AnimatedFigure';
+import ModelViewer from '../ThreeJS/test.jsx';
+
 const Section0 = () => {
   useEffect(() => {
     ScrollReveal().reveal(".sectionzero-container-top-2", {
@@ -68,10 +74,22 @@ const Section0 = () => {
               alt="NYHPIC2"
               className="sectionzero-container-bottom-img"
             />
+            
+            {/* <Canvas camera={{ position: [0, 5, 10], fov: 75 }}>
+              <ambientLight intensity={0.5} />
+              <directionalLight position={[10, 10, 5]} intensity={1.5} />
+              <DeskAndComputer />
+              <AnimatedFigure />
+              <OrbitControls enableDamping={true} dampingFactor={0.1} />
+            </Canvas> */}
+            {/* <div style={{ height: '100vh' }}>
+              <ModelViewer url="/test.glb" />
+            </div> */}
+
           </div>
         </div>
       </div>
-      {/* <div id="about" className="sectiontwo-anchor"></div> */}
+      <div id="about" className="sectionone-anchor"></div>
     </div>
   );
 };

@@ -1,11 +1,15 @@
 .sectionone-container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: clamp(4rem, 4vw, 32px);
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .sectionone-container-main {
   padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 .sectionone-about,
 .sectionone-container-left,
@@ -26,6 +30,7 @@
 .sectionone-container-right {
   width: 65%;
   justify-content: center;
+  gap: 4rem;
 }
 
 .sectionone-container-right-header {
@@ -39,7 +44,7 @@
 .sectionone-container-right-button-div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 5rem;
 }
 
 .sectionone-container-right-button {
@@ -47,8 +52,10 @@
   border-color: #8d7a69;
   border-width: 1px;
   background-color: #fefae0;
-  padding: 1rem;
-  font-weight: 550;
+  padding: 1rem 7rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+  0 2px 3px rgba(0, 0, 0, 0.08);
+transition: box-shadow 0.3s ease-in-out;
 }
 
 .sectionone-container-right-button:hover {
@@ -60,11 +67,7 @@
 
 /* SectionTwo Projects Reference */
 .sectiontwo-anchor {
-  display: block;
-  height: 200px;
-  margin-top: -100px;
-  background-color: black;
-  visibility: hidden;
+  height: 70px;
   pointer-events: none;
 }
 

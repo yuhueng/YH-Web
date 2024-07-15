@@ -46,7 +46,7 @@ function Header() {
               <li>
                 <a
                   href="#download"
-                  className="header-right-navitem-special text-mossgreen"
+                  className="header-right-navitem-special text-cornsilk"
                 >
                   Download CV
                 </a>

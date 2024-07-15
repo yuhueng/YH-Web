@@ -51,7 +51,7 @@ const Section1 = () => {
   return (
     <div className="sectionone-section bg-mossgreen">
       <div className="max-w-screen-2xl mx-auto">
-        <div className="sectionone-container flex flex-col">
+        <div className="sectionone-container">
           <h2 className="sectionone-about text-center text-cornsilk underline underline-offset-8">
             About Me
           </h2>
@@ -77,18 +77,23 @@ const Section1 = () => {
                 new cultures.
               </p>
               <div className="sectionone-container-right-button-div">
-                <a
-                  className="sectionone-container-right-button text-tan2"
-                  href="#"
-                >
-                  Find out more about me!
-                </a>
+                <div className="sectionone-container-right-button-div-center">
+                  <a
+                    className="sectionone-container-right-button text-tan2"
+                    href="#"
+                  >
+                    Find out more about me!
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+          <div id="projects" className="sectiontwo-anchor">
+
+          </div>
         </div>
       </div>
-      {/* <div id="projects" className="sectiontwo-anchor"></div> */}
+      
     </div>
   );
 };
