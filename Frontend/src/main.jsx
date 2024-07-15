@@ -6,11 +6,16 @@ import Section1 from "./components/Sections/Section1.jsx";
 import Section2 from "./components/Sections/Section2.jsx";
 import Section3 from "./components/Sections/Section3.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import TestSection1 from "./components/Tests/TestSection1.jsx";
-import TestSection2 from "./components/Tests/TestSection2.jsx";
-
 import "./index.css";
 import "versoly-ui";
+import Section4 from "./components/Sections/Section4.jsx";
+
+
+// import TestSection1 from "./components/Tests/TestSection1.jsx";
+// import TestSection2 from "./components/Tests/TestSection2.jsx";
+// import TestSection3 from "./components/Tests/TestSection3.jsx";
+
+
 
 
 
@@ -19,7 +24,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Header />
     <Section0 />
     <Section1 />
+    <Section2 />
     <Section3 />
+    <Section4 />
     <Footer />
 
 

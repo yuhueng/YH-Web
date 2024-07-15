@@ -1,11 +1,103 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 .sectiontwo-container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-top: -100px; /* Adjust this value to match your header height */
-  position: relative;
+  padding-top: clamp(4rem, 4vw, 32px);
+  padding-bottom: clamp(16px, 4vw, 32px);
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.sectiontwo-container-main {
-  padding-top: 2rem;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  width: 100%;
+  gap: 4rem;
+}
+
+.individualproject-container {
+  display: grid;
+  place-items: center; /* Center both horizontally and vertically */
+}
+/* Individual Project CSS */
+.project {
+  align-items: center;
+  transition: transform 0.3s, opacity 0.3s;
+  width: 70vw;
+  border-color: #99a083;
+  border-radius: 25px;
+  border-width: 2px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-main{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-title {
+  color: #8d7a69;
+  font-weight: 600;
+}
+.project-date {
+  color: #8d7a69;
+  font-weight: 500;
+}
+
+.individualproject-desc {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 65%;
+}
+
+.project-desc-tag {
+  width: 100%;
+  text-decoration: underline;
+  padding-top: 1rem;
+}
+.project-desc {
+  width: 100%;  
+}
+
+.projectimage-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.icon-deco {
+  padding-top: 0.5rem;
+  color: black;
+  font-size: clamp(30px, 5vw, 50px);
+  padding-right: 7px;
+}
+.icon-deco:hover {
+  color: #99a083;
+}
+
+@media only screen and (max-width: 552px) {
+  .projectimage-container {
+    display: none;
+    transition: 0.6s ease-in-out;
+  }
+  .individualproject-desc {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+  
 }

@@ -22,8 +22,19 @@
 
 /* Column styles */
 .col {
+  display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.footer-social-links {
+  font-size: clamp(25px, 5vw, 35px);
+  padding-right: 10px;
+}
+
+.footer-social-links:hover {
+  color: black;
 }
