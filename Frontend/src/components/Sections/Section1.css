@@ -2,7 +2,7 @@
   padding-top: clamp(4rem, 4vw, 32px);
   padding-left: clamp(16px, 4vw, 32px);
   padding-right: clamp(16px, 4vw, 32px);
-  width: 80vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

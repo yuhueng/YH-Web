@@ -19,7 +19,7 @@ function Footer() {
                     <a className="text-white" href= "https://github.com/yuhueng" title="github" target="_blank"rel="noopener noreferrer">
                         <i className="footer-social-links fab fa-github-square"></i>
                     </a>
-                    <a className="text-white" href="www.linkedin.com/in/ngyuhueng" title="linkedin" target="_blank" rel="noopener noreferrer">
+                    <a className="text-white" href="https://www.linkedin.com/in/ngyuhueng" title="linkedin" target="_blank" rel="noopener noreferrer">
                         <i className="footer-social-links fab fa-linkedin"></i>
                     </a>
                     {/* <a className="text-white" href="#" title="Instagram" target="_blank"

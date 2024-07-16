@@ -62,7 +62,7 @@ const Section0 = () => {
               <h2>An Aspiring Software Engineer</h2>
             </div>
             <div className="sectionzero-container-bottom">
-            <a className="text-black" href= "https://github.com/yuhueng" title="github" target="_blank"     rel="noopener noreferrer">
+              <a className="text-black" href= "https://github.com/yuhueng" title="github" target="_blank"     rel="noopener noreferrer">
                     <i className="sectionzero-social-links fab fa-github-square"></i>
                 </a>
                 <a className="linkedin-color" href="https://www.linkedin.com/in/ngyuhueng" title="linkedin" target="_blank" rel="noopener noreferrer">

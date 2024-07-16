@@ -41,15 +41,14 @@
 }
 
 .sectionzero-social-links {
-  font-size: clamp(25px, 5vw, 60px);
-  padding: 0 10px;
+  font-size: clamp(40px, 5vw, 60px);
+  padding: 30px 15px 0px 15px;
 }
 .sectionzero-social-links:hover {
   color: #99a083;
 }
 .linkedin-color {
   color: #0077B5;
-  padding-left: 15px;
 }
 
 .sectionzero-container-right {
@@ -80,6 +79,9 @@
     transition: 0.4s ease-in;
     padding-right: 0%;
   }
+  .sectionzero-container-top-2{
+    padding-right: 0%;
+  } 
   .sectionzero-container-top-3 {
     transition: 0.4s ease-in;
     padding-left: 0%;
