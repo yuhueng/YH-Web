@@ -2,6 +2,7 @@ import "./Section1.css";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import anime from "animejs";
+import { Outlet, Link } from "react-router-dom";
 
 const Section1 = () => {
   function animateAll() {
@@ -82,7 +83,8 @@ const Section1 = () => {
                     className="sectionone-container-right-button text-tan2"
                     href="#"
                   >
-                    Find out more about me!
+                    <Link to={`/About`}>Find out more about me!</Link>
+                    
                   </a>
                 </div>
               </div>
