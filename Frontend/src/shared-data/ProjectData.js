@@ -42,7 +42,7 @@ const projects = [
   {
     id: 4,
     title: "TemasekXSUTD Hackathon (GenAI)",
-    image: "images/nyhpic3.jpg",
+    image: "images/GenAI2.jpg",
     nosocials: "",
     github: "",
     linkedin: "https://www.linkedin.com/posts/ngyuhueng_genaihackathon-temasekxsutd-activity-7175891555591839744-DQPC?utm_source=share&utm_medium=member_desktop",

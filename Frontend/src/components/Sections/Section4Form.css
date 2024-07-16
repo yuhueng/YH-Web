@@ -1,54 +1,56 @@
-/* Section4Form.css */
+/* Section4 Form CSS */
 .form-container {
     display: flex;
     flex-wrap: wrap;
-    width: clamp(50rem, 15.385rem + 46.154vw, 200rem);
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .form-group {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: clamp(2.5rem, 1.875rem + 0.781vw, 3.5rem);
-  }
-  
-  .form-checkbox {
-    margin-right: 8px;
-  }
-  
-  .inline-flex {
-    display: inline-flex;
-    align-items: center;
-  }
-  
-  .ml-2 {
-    margin-left: 8px;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-  }
-  
-  .btn-lg {
-    font-size: 1.25rem;
-    padding: 12px 24px;
-  }
-  
+.form-group {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group .forminput {
+  width: 100% ;
+  padding: 10px ;
+  border: 1px solid #8d7a69;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: clamp(2.5rem, 1.875em + 0.781vw, 3.5rem) ;
+}
+
+.form-checkbox {
+  margin-right: 8px;
+}
+
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.form-button {
+  padding: 10px 20px;
+  background-color: #99a083;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: clamp(2.5rem, 1.875em + 0.781vw, 3.5rem) ;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-color: #99a083;
+  border-width: 2px;
+}
+
+.form-button:hover{
+  background-color: #fefae0;
+  color:#646854;
+  border-color: #646854;
+  border-width: 2px;
+  transition: 0.3s ease-in;
+}

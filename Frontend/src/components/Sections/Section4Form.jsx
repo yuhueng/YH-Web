@@ -1,6 +1,7 @@
+import "./Section4Form.css";
 import React from 'react';
 import { useForm, Controller } from "react-hook-form";
-import './Section4Form.css'; // Import the CSS file
+
 
 const Section4Form = () => {
   const { control, handleSubmit } = useForm({
@@ -9,55 +10,53 @@ const Section4Form = () => {
       email: '',
       subject: '',
       message: '',
-      agree: false,
-      occupation: ''
     }
   });
 
   const onSubmit = data => console.log(data);
-
   return (
-    <form className="form-container bg-cornsilk" onSubmit={handleSubmit(onSubmit)}>
+    <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group">
-        <label>Full Name</label>
+        <label className="text-tan2">Full Name</label>
         <Controller
           name="name"
           control={control}
           rules={{ required: true }}
-          render={({ field }) => <input type="text" className="form-input" {...field} placeholder="Full Name" />}
+          render={({ field }) => <input className="forminput" type="text" {...field} placeholder="Full Name" />}
         />
       </div>
 
       <div className="form-group">
-        <label>Email</label>
+        <label className="text-tan2">Email</label>
         <Controller
           name="email"
           control={control}
-          render={({ field }) => <input type="email" className="form-input" {...field} placeholder="Email" />}
+          rules={{ required: true }}
+          render={({ field }) => <input type="email" className="forminput" {...field} placeholder="Email" />}
         />
       </div>
 
       <div className="form-group">
-        <label>Subject</label>
+        <label className="text-tan2">Subject</label>
         <Controller
           name="subject"
           control={control}
           rules={{ required: true }}
-          render={({ field }) => <input type="text" className="form-input" {...field} placeholder="Subject" />}
+          render={({ field }) => <input type="text" className="forminput" {...field} placeholder="Subject" />}
         />
       </div>
 
       <div className="form-group">
-        <label>Message</label>
+        <label className="text-tan2">Message</label>
         <Controller
           name="message"
           control={control}
-          render={({ field }) => <textarea className="form-input" rows="3" {...field} placeholder="Message" />}
+          render={({ field }) => <textarea className="forminput" rows="3" {...field} placeholder="Message" />}
         />
       </div>
 
       <div className="form-group col">
-        <button className="btn btn-lg btn-primary" type="submit">Send Message</button>
+        <button className="form-button" type="submit">Send Message</button>
       </div>
     </form>
   );

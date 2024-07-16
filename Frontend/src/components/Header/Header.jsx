@@ -1,6 +1,7 @@
 import "./Header.css";
+import { Outlet, Link } from "react-router-dom";
 
-function Header() {
+const Header = () => {
   return (
     <div className="header-container fixed bg-cornsilk">
       <div className="max-w-screen-2xl mx-auto">
@@ -21,10 +22,10 @@ function Header() {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="#"
                   className="header-right-navitem text-mossgreen"
                 >
-                  About
+                  <Link to={`/About`}>About</Link>
                 </a>
               </li>
               <li>

@@ -19,6 +19,7 @@
 }
 
 .sectionzero-container-top {
+  display: flex;
   width: 50%;
   border-radius: 10px;
   padding: 3rem;
@@ -74,17 +75,25 @@
   height: clamp(30px, 10vw, 100px);
 }
 
-@media only screen and (max-width: 448px) {
+@media only screen and (max-width: 552px) {
   .sectionzero-container-top-1 {
+    transition: 0.4s ease-in;
     padding-right: 0%;
   }
   .sectionzero-container-top-3 {
     transition: 0.4s ease-in;
     padding-left: 0%;
     padding-bottom: 1rem;
-
   }
+  .sectionzero-container {
+    transition: 0.4s ease-in;
+    flex-direction: column;
+  }
+  .sectionzero-container-top, .sectionzero-container-right   {
+    transition: 0.4s ease-in;
+    width: 100%;
 }
+} 
 
 /* SectionOne About Reference */
 .sectionone-anchor {

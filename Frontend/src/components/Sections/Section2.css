@@ -28,7 +28,7 @@
   align-items: center;
   transition: transform 0.3s, opacity 0.3s;
   width: 70vw;
-  background-color: #fff9da;
+  background-color: #fefae0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   /* border-width: 1px; */
@@ -115,6 +115,9 @@
     padding-left: 2rem;
     padding-right: 2rem;
     width: 100%;
+  }
+  .project {
+    width: 90vw;
   }
 }
 

@@ -38,3 +38,12 @@
 .footer-social-links:hover {
   color: black;
 }
+
+.email-icon {
+  height: clamp(25px, 5vw, 35px);
+  width: auto;
+  object-fit: contain;
+  padding-right: 10px;
+  fill: white;
+  color: white;
+}
