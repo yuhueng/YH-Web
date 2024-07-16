@@ -94,3 +94,10 @@
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 552px) {
+  .sectiontwo-anchor {
+    height: clamp(5rem, 0.536rem + 5.952vi, 8.75rem);
+    pointer-events: none;
+  }
+}
