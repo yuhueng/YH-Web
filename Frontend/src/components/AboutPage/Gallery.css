@@ -3,9 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   margin-right: 10px;
-  background-color: #f0f0f0;
+  background-color: black;
+  border-radius: 3px;
 }
 .carousel-cell img {
   height: 100%; 
