@@ -51,7 +51,7 @@ const Section4Form = () => {
         <Controller
           name="message"
           control={control}
-          render={({ field }) => <textarea className="forminput" rows="10" {...field} placeholder="Message" />}
+          render={({ field }) => <textarea className="forminput" rows="3" {...field} placeholder="Message" />}
         />
       </div>
 

@@ -31,11 +31,14 @@
   color: grey;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .tab-icon-active {
 color: #8d7a69;
-
 }
 
 .customized-tabs .ant-tabs-ink-bar {
-    background-color: #8d7a69; /* Change this to your desired color */
-  }
+  background-color: #8d7a69; 
+}

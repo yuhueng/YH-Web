@@ -26,14 +26,11 @@
   padding: 6px ;
 }
 
-/* App.css */
 .img-responsive {
   width: 100%;
   height: auto;
   display: block;
 }
-
-
 
 .header {
   display: flex;
