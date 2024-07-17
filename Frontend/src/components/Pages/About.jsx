@@ -8,8 +8,8 @@ const About = () => {
   return (
     <div>
       <Header />
-      <AboutSection0 />
       <AboutSection1 />
+      <AboutSection0 />
       <Footer />
     </div>
   );

@@ -1,0 +1,42 @@
+.header-margin {
+    height: 70px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+.aboutsectionone-container {
+    padding-top: clamp(16px, 8vw, 36px);
+    padding-bottom: clamp(16px, 4vw, 36px);
+    padding-left: clamp(16px, 4vw, 60px);
+    padding-right: clamp(16px, 4vw, 60px);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tabs-container {
+    width: 70vw;
+    padding-top: clamp(16px, 4vw, 36px);
+    padding-bottom: clamp(16px, 4vw, 36px);
+    padding-left: clamp(16px, 4vw, 32px);
+    padding-right: clamp(16px, 4vw, 32px);
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #8d7a69;
+}
+
+.tab-icon {
+    color: grey;
+    font-size: clamp(2.5rem, 1.875rem + 0.781vw, 4.5rem);
+
+  }
+  
+.tab-icon-active {
+color: #8d7a69;
+font-size: clamp(2.5rem, 1.875rem + 0.781vw, 4.5rem);
+}
+
+.customized-tabs .ant-tabs-ink-bar {
+    background-color: #8d7a69; /* Change this to your desired color */
+  }
