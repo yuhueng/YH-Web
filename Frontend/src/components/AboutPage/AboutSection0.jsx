@@ -45,7 +45,7 @@ const Section0 = () => {
       <div className="max-w-screen-2xl mx-auto">
         <div className="aboutsectionzero-container">
           <h4 className="aboutsectionone-header text-center text-tan2 underline underline-offset-8">
-            Travel Memories
+            Photo & Travel Memories
           </h4>
           <div className="aboutsectionzero-gallery">
             <Gallery />
