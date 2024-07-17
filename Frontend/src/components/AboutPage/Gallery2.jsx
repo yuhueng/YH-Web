@@ -15,34 +15,31 @@ import './Gallery.css';
 
 const Gallery2 = () => {
   const flickityRef = useRef(null);
+  const lightGalleryInstance = useRef(null);
 
   useEffect(() => {
-    import('imagesloaded').then(({ default: imagesLoaded }) => {
-      imagesLoaded(flickityRef.current, function () {
-        const flkty = new Flickity(flickityRef.current, {
-          cellAlign: 'center',
-          pageDots: false,
-          contain: true,
-          autoPlay: true,
-        });
-
-        flkty.on('settle', function () {
-          LightGallery(document.querySelector('.flickity-slider'), {
-            selector: '.carousel-cell a',
-            plugins: [lgThumbnail, lgZoom, lgVideo],
-            showCloseIcon: true,
-            download: true,
-            mode: 'lg-fade',
-            loop: true,
-            hideBarsDelay: 3000,
-          });
-        });
-
-        return () => {
-          flkty.destroy();
-        };
-      });
+    const flkty = new Flickity(flickityRef.current, {
+      cellAlign: 'center',
+      pageDots: false,
+      contain: true,
+      autoPlay: 1500,
+      wrapAround: true,
     });
+
+    const container = document.querySelector('.flickity-slider');
+    lightGalleryInstance.current = LightGallery(container, {
+      selector: '.carousel-cell a',
+      plugins: [lgThumbnail, lgZoom, lgVideo],
+      showCloseIcon: true,
+      download: true,
+    });
+
+    return () => {
+      flkty.destroy();
+      if (lightGalleryInstance.current) {
+        lightGalleryInstance.current.destroy();
+      }
+    };
   }, []);
 
   return (

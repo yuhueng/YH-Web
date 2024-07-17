@@ -50,10 +50,8 @@ const Gallery = () => {
           </a>
         ))}
       </LightGallery>
-
     </div>
   );
 };
-
 
 export default Gallery;

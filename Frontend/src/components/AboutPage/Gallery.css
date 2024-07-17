@@ -1,31 +1,27 @@
 .carousel-cell {
-    height: 300px;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-right: 10px;
-    background-color: black;
-  }
-  
-  .carousel-cell img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain; 
-    display: block;
-  }
-  
-  .flickity-carousel {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .gallery-container {
-    width: 100%;
-  }
-  
-  .img-responsive {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  height: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 10px;
+  background-color: #f0f0f0;
+}
+.carousel-cell img {
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover; 
+  display: block;
+}
+.flickity-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+.gallery-container {
+  width: 100%;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
