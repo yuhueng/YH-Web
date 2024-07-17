@@ -26,7 +26,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  /* clip-path: polygon(60% 24%, 84% 34%, 84% 53%, 70% 64%, 56% 74%, 37% 80%, 21% 73%, 16% 60%, 14% 46%, 19% 36%, 28% 29%, 45% 23%); */
 }
 .sectionone-container-right {
   width: 65%;

@@ -27,7 +27,7 @@
   align-items: center;
 }
 .sectionzero-container-top-1 {
-  padding-right: clamp(0%, 30vw, 70%);
+  padding-right: clamp(50%, 30vw, 60%);
   padding-bottom: 2rem;
 }
 .sectionzero-container-top-2 {
