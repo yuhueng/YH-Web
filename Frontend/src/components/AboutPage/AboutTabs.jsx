@@ -19,7 +19,7 @@ const App = () => {
           tab={
             <span className={activeKey === '1' ? 'tab-icon-active' : 'tab-icon'}>
               <SmileOutlined />
-              Introduction
+              <label className='px-2'>Introduction</label> 
             </span>
           }
           key="1"
@@ -30,7 +30,7 @@ const App = () => {
           tab={
             <span className={activeKey === '2' ? 'tab-icon-active' : 'tab-icon'}>
               <ReadOutlined />
-              Education
+              <label className='px-2'>Education</label> 
             </span>
           }
           key="2"
@@ -47,7 +47,7 @@ const App = () => {
           tab={
             <span className={activeKey === '3' ? 'tab-icon-active' : 'tab-icon'}>
               <HeartOutlined />
-              Travel/Interests
+              <label className='px-2'>Travel/Interests</label> 
             </span>
           }
           key="3"

@@ -7,7 +7,6 @@ import techstackicons from "../../shared-data/TechStackData.js";
 
 const Section2 = () => {
   return (
-    
     <div className="sectiontwo-section bg-cornsilk">
       <div className="max-w-screen-2xl mx-auto">
         <div className="sectiontwo-container">

@@ -98,7 +98,7 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <div>
+    <div className='gallery-container'>
       <LightGallery
         plugins={[lgZoom, lgVideo]}
         mode="lg-fade"
@@ -109,8 +109,8 @@ export const Gallery = () => {
         elementClassNames={'gallery'}
         mobileSettings={{
           controls: false,
-          showCloseIcon: false,
-          download: false,
+          showCloseIcon: true,
+          download: true,
           rotate: false,
         }}
       >
