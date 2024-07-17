@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import anime from "animejs";
 import Gallery from "./Gallery.jsx";
+import Gallery2 from "./Gallery2.jsx";
 
 const Section0 = () => {
   useEffect(() => {
@@ -48,7 +49,8 @@ const Section0 = () => {
             Photo & Travel Memories
           </h4>
           <div className="aboutsectionzero-gallery">
-            <Gallery />
+            {/* <Gallery /> */}
+            <Gallery2 />
           </div>
         </div>
       </div>

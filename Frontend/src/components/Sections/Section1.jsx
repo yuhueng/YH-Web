@@ -59,7 +59,7 @@ const Section1 = () => {
           <div className="sectionone-container-main flex flex-row">
             <div className="sectionone-container-left">
               <img
-                src="images/nyhpic1-low.jpg"
+                src="images/nyhpic1.jpg"
                 alt="NYHPIC1"
                 className="sectionone-container-left-img"
               />
