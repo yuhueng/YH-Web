@@ -15,18 +15,18 @@ const Header = () => {
             />
           </div>
           <nav className="header-right">
-            <ul className="md:flex items-center gap-16 hidden">
+            <ul className="mobileDesktop">
             {location.pathname === '/' && (
               <>
                 <li>
-                  <a href="#home" className="header-right-navitem text-mossgreen">
+                  <a href="#home" className="header-right-navitem mobileDesktop-items text-mossgreen">
                     Home
                   </a>
                 </li>
                 <li>
                   <a
                     href="#about"
-                    className="header-right-navitem text-mossgreen"
+                    className="header-right-navitem mobileDesktop-items text-mossgreen"
                   >
                     About
                   </a>
@@ -34,7 +34,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#projects"
-                    className="header-right-navitem text-mossgreen"
+                    className="header-right-navitem mobileDesktop-items text-mossgreen"
                   >
                     Projects
                   </a>
@@ -42,7 +42,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#contacts"
-                    className="header-right-navitem text-mossgreen"
+                    className="header-right-navitem mobileDesktop-items text-mossgreen"
                   >
                     Contacts
                   </a>
@@ -74,7 +74,6 @@ const Header = () => {
                     Download CV
                   </a>
                 </li>
-                    
               </>
             )}
             </ul>
