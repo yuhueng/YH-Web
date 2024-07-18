@@ -2,6 +2,7 @@ import "./Section0.css";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import anime from "animejs";
+import ThreeModel from "../ThreeJS/AnimatedFigure.jsx"
 
 const Section0 = () => {
   useEffect(() => {
@@ -72,25 +73,18 @@ const Section0 = () => {
           </div>
 
 
-          <div className="sectionzero-container-right">
+          {/* <div className="sectionzero-container-right">
             <img
               src="images/nyhpic3.jpg"
               alt="NYHPIC3"
               className="sectionzero-container-right-img"
-            />
+            /> */}
             
-            {/* <Canvas camera={{ position: [0, 5, 10], fov: 75 }}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[10, 10, 5]} intensity={1.5} />
-              <DeskAndComputer />
-              <AnimatedFigure />
-              <OrbitControls enableDamping={true} dampingFactor={0.1} />
-            </Canvas> */}
-            {/* <div style={{ height: '100vh' }}>
-              <ModelViewer url="/test.glb" />
-            </div> */}
-
+          <div className="sectionzero-container-right">
+            <ThreeModel />
           </div>
+
+          
         </div>
       </div>
       <div id="about" className="sectionone-anchor"></div>
