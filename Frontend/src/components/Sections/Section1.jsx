@@ -2,7 +2,7 @@ import "./Section1.css";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import anime from "animejs";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Section1 = () => {
   function animateAll() {
@@ -50,10 +50,10 @@ const Section1 = () => {
   });
 
   return (
-    <div className="sectionone-section bg-mossgreen">
+    <div className="sectionone-section">
       <div className="max-w-screen-2xl mx-auto">
         <div className="sectionone-container">
-          <h2 className="sectionone-about text-center text-cornsilk underline underline-offset-8">
+          <h2 className="sectionone-about text-center underline underline-offset-8">
             About Me
           </h2>
           <div className="sectionone-container-main flex flex-row">
@@ -65,37 +65,30 @@ const Section1 = () => {
               />
             </div>
             <div className="sectionone-container-right flex flex-col">
-              <h3 className="sectionone-container-right-header text-papayawhip">
+              <h3 className="sectionone-container-right-header">
                 Hello! Once again, I am Yu Hueng
               </h3>
-              <p className="sectionone-container-right-text text-white">
+              <p className="sectionone-container-right-text">
                 Currently studying <u>Computer Science and Design (CSD)</u> at
                 Singapore University of Technology and Design (SUTD).
               </p>
-              <p className="sectionone-container-right-text text-white">
+              <p className="sectionone-container-right-text">
                 I have developed a passion for coding over the years, at the
                 same time, also cultivated a love for traveling and exploring
                 new cultures.
               </p>
               <div className="sectionone-container-right-button-div">
                 <div className="sectionone-container-right-button-div-center">
-                  <a
-                    className="sectionone-container-right-button text-tan2"
-                    href="#"
-                  >
+                  <a className="sectionone-container-right-button" href="#">
                     <Link to={`/About`}>Find out more about me!</Link>
-                    
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div id="projects" className="sectiontwo-anchor">
-
-          </div>
+          <div id="projects" className="sectiontwo-anchor"></div>
         </div>
       </div>
-      
     </div>
   );
 };

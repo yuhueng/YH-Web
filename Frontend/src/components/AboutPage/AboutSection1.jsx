@@ -41,18 +41,17 @@ const AboutSection1 = () => {
   });
 
   return (
-    <div className="aboutsectionone-section bg-cornsilk">
+    <div className="aboutsectionone-section">
       <div className="max-w-screen-2xl mx-auto">
-        <div className="header-margin bg-cornsilk"></div>
+        <div className="header-margin"></div>
         <div className="aboutsectionone-container flex flex-col justify-center">
-          <h2 className="aboutsectionone-header text-center text-tan2 underline underline-offset-8">
+          <h2 className="aboutsectionone-header text-center underline underline-offset-8">
             More About Me
           </h2>
           <div className="tabs-container">
             <AboutTabs />
           </div>
         </div>
-        
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 /* Section4 Form CSS */
 .form-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form-group {
   width: 100%;
   padding: 10px;
@@ -12,18 +12,22 @@
   flex-direction: column;
 }
 
+.form-label {
+  color: var(--secondary-color);
+  font-weight: 450;
+}
+
 .form-group .forminput {
-  width: 100% ;
-  padding: 10px ;
-  border: 1px solid #8d7a69;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: clamp(2.5rem, 1.875em + 0.781vw, 3.5rem) ;
+  font-size: clamp(2.5rem, 1.875em + 0.781vw, 3.5rem);
   overflow-wrap: break-word;
   word-break: break-word;
   line-height: 1.5;
 }
-
 
 .form-checkbox {
   margin-right: 8px;
@@ -40,21 +44,21 @@
 
 .form-button {
   padding: 10px 20px;
-  background-color: #99a083;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
   border-radius: 4px;
   cursor: pointer;
-  font-size: clamp(2.5rem, 1.875em + 0.781vw, 3.5rem) ;
+  font-size: clamp(2.5rem, 1.875em + 0.781vw, 3.5rem);
   font-weight: 500;
   padding: 12px 24px;
-  border-color: #99a083;
+  border-color: var(--secondary-color);
   border-width: 2px;
 }
 
-.form-button:hover{
-  background-color: #fefae0;
-  color:#646854;
-  border-color: #646854;
+.form-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
   border-width: 2px;
   transition: 0.3s ease-in;
 }

@@ -10,19 +10,21 @@ const Section0 = () => {
     setIsMobile(window.innerWidth < 767);
   };
   useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div className="aboutsectionzero-section bg-cornsilk">
+    <div className="aboutsectionzero-section">
       <div className="max-w-screen-2xl mx-auto">
         <div className="aboutsectionzero-container">
-          <h4 className="aboutsectionone-header text-center text-tan2 underline underline-offset-8">
+          <h4 className="aboutsectionzero-header text-center underline underline-offset-8">
             Photo & Travel Memories
           </h4>
-          <div className="aboutsectionzero-gallery">
-            {isMobile ? <Gallery2 /> : <Gallery />}
+          <div className="aboutsectionzero-padding">
+            <div className="aboutsectionzero-gallery">
+              {isMobile ? <Gallery2 /> : <Gallery />}
+            </div>
           </div>
         </div>
       </div>

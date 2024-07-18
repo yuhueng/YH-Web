@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.footer-section {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
 /* Container styles */
 .container {
   width: 100%;
@@ -10,6 +15,9 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  height: 70px;
+  display: grid;
+  align-items: center;
 }
 
 /* Row styles */
@@ -30,13 +38,17 @@
   padding-left: 15px;
 }
 
+.footer-social-icon {
+  color: var(--secondary-color);
+}
+
 .footer-social-links {
   font-size: clamp(25px, 5vw, 35px);
   padding-right: 10px;
 }
 
 .footer-social-links:hover {
-  color: black;
+  color: var(--secondary-color2);
 }
 
 .email-icon {
@@ -44,6 +56,6 @@
   width: auto;
   object-fit: contain;
   padding-right: 10px;
-  fill: white;
-  color: white;
+  fill: var(--secondary-color);
+  color: var(--secondary-color);
 }

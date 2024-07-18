@@ -8,20 +8,17 @@ import Footer from "../Footer/Footer.jsx";
 import "../../index.css";
 
 const Root = () => {
-  
-  
-    return (
-      <div>
-        <Header />
-        <Section0 />
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-        <Footer />
-      </div>
-    );
-  };
-  
-  export default Root;
-  
+  return (
+    <div>
+      <Header />
+      <Section0 />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Footer />
+    </div>
+  );
+};
+
+export default Root;

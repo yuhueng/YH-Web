@@ -7,10 +7,10 @@ import techstackicons from "../../shared-data/TechStackData.js";
 
 const Section2 = () => {
   return (
-    <div className="sectiontwo-section bg-cornsilk">
+    <div className="sectiontwo-section">
       <div className="max-w-screen-2xl mx-auto">
         <div className="sectiontwo-container">
-          <div className="sectiontwo-projects text-center text-mossgreen underline underline-offset-8">
+          <div className="sectiontwo-projects text-center underline underline-offset-8">
             <h2>Past Projects</h2>
           </div>
           <div className="projects-container">
@@ -35,7 +35,11 @@ const IndividualProjects = ({ project }) => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <motion.div ref={ref} className="individualproject-container" style={{ scale }}>
+    <motion.div
+      ref={ref}
+      className="individualproject-container"
+      style={{ scale }}
+    >
       {project.id % 2 === 0 ? (
         <div className="project">
           <h4 className="project-title">{project.title}</h4>
@@ -49,17 +53,15 @@ const IndividualProjects = ({ project }) => {
               />
             </div>
             <div className="individualproject-desc flex flex-col">
-              <h6 className="project-desc-tag text-darkgrey">Description:</h6>
-              <p className="project-desc text-mossgreen">{project.desc1}</p>
+              <h6 className="project-desc-tag">Description:</h6>
+              <p className="project-desc">{project.desc1}</p>
               {project.desc2 && (
-                  <div>
-                    <h6 className="project-desc-tag text-darkgrey">Achievements:</h6>
-                    <p className="project-desc text-mossgreen">{project.desc2}</p>
-                  </div>
-                )}
-              <h6 className="project-desc-tag text-darkgrey">
-                Links:
-              </h6>
+                <div>
+                  <h6 className="project-desc-tag">Achievements:</h6>
+                  <p className="project-desc">{project.desc2}</p>
+                </div>
+              )}
+              <h6 className="project-desc-tag">Links:</h6>
               <div className="project-links flex flex-row">
                 {project.github && (
                   <a
@@ -84,22 +86,18 @@ const IndividualProjects = ({ project }) => {
                   </a>
                 )}
                 {!project.github && !project.linkedin && (
-                  <p className="project-desc text-mossgreen">
-                    {project.nosocials}
-                  </p>
+                  <p className="project-desc">{project.nosocials}</p>
                 )}
               </div>
-              <h6 className="project-desc-tag text-darkgrey">
-                Technologies Used:
-              </h6>
+              <h6 className="project-desc-tag">Technologies Used:</h6>
               <div className="techstack-icons">
-                  {project.techstack.map((techstackicon) => (
-                    <img
-                      key={techstackicon}
-                      className="TechstackIcon"
-                      src={techstackicons[techstackicon]}
-                    />
-                  ))} 
+                {project.techstack.map((techstackicon) => (
+                  <img
+                    key={techstackicon}
+                    className="TechstackIcon"
+                    src={techstackicons[techstackicon]}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -110,19 +108,17 @@ const IndividualProjects = ({ project }) => {
           <p className="project-date">{project.date}</p>
           <div className="project-main">
             <div className="individualproject-desc flex flex-col">
-              <h6 className="project-desc-tag text-darkgrey">Description:</h6>
-              <p className="project-desc text-mossgreen">{project.desc1}</p>
-              
-                {project.desc2 && (
-                  <div>
-                    <h6 className="project-desc-tag text-darkgrey">Achievements:</h6>
-                    <p className="project-desc text-mossgreen">{project.desc2}</p>
-                  </div>
-                )}
-              
-              <h6 className="project-desc-tag text-darkgrey">
-               Links:
-              </h6>
+              <h6 className="project-desc-tag">Description:</h6>
+              <p className="project-desc">{project.desc1}</p>
+
+              {project.desc2 && (
+                <div>
+                  <h6 className="project-desc-tag">Achievements:</h6>
+                  <p className="project-desc">{project.desc2}</p>
+                </div>
+              )}
+
+              <h6 className="project-desc-tag">Links:</h6>
               <div className="project-links flex flex-row">
                 {project.github && (
                   <a
@@ -147,22 +143,18 @@ const IndividualProjects = ({ project }) => {
                   </a>
                 )}
                 {!project.github && !project.linkedin && (
-                  <p className="project-desc text-mossgreen">
-                    {project.nosocials}
-                  </p>
+                  <p className="project-desc">{project.nosocials}</p>
                 )}
               </div>
-              <h6 className="project-desc-tag text-darkgrey">
-                Technologies Used:
-              </h6>
+              <h6 className="project-desc-tag">Technologies Used:</h6>
               <div className="techstack-icons">
                 {project.techstack.map((techstackicon) => (
-                <img
-                  key={techstackicon}
-                  className="TechstackIcon"
-                  src={techstackicons[techstackicon]}
+                  <img
+                    key={techstackicon}
+                    className="TechstackIcon"
+                    src={techstackicons[techstackicon]}
                   />
-                ))}   
+                ))}
               </div>
             </div>
             <div className="projectimage-container">

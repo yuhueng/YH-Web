@@ -1,4 +1,8 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+.sectiontwo-section {
+  background-color: var(--primary-color);
+}
+
 .sectiontwo-container {
   padding-top: clamp(4rem, 4vw, 32px);
   padding-bottom: clamp(16px, 4vw, 32px);
@@ -9,6 +13,10 @@
   flex-direction: column;
   justify-content: center;
 }
+.sectiontwo-projects {
+  color: var(--secondary-color);
+}
+
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -28,7 +36,7 @@
   align-items: center;
   transition: transform 0.3s, opacity 0.3s;
   width: 70vw;
-  background-color: #fefae0;
+  background-color: var(--primary-color);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   /* border-width: 1px; */
@@ -39,18 +47,18 @@
   flex-direction: column;
 }
 
-.project-main{
+.project-main {
   display: flex;
   flex-direction: row;
 }
 
 .project-title {
   text-align: center;
-  color: #8d7a69;
+  color: var(--secondary-color3);
   font-weight: 600;
 }
 .project-date {
-  color: #8d7a69;
+  color: var(--secondary-color3);
   font-weight: 500;
 }
 
@@ -64,9 +72,11 @@
   width: 100%;
   text-decoration: underline;
   padding-top: 1rem;
+  color: var(--secondary-color);
 }
 .project-desc {
-  width: 100%;  
+  width: 100%;
+  color: var(--secondary-color);
 }
 
 .projectimage-container {
@@ -84,14 +94,14 @@
 }
 .icon-deco {
   padding-top: 0.5rem;
-  color: black;
+  color: var(--secondary-color);
   font-size: clamp(30px, 5vw, 50px);
   padding-right: 20px;
 }
 .icon-deco:hover {
-  color: #99a083;
+  color: var(--secondary-color2);
 }
-.techstack-icons{
+.techstack-icons {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;

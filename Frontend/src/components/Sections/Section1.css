@@ -1,8 +1,15 @@
+.sectionone-section {
+  background-color: var(--secondary-color);
+  display: grid;
+  place-items: center;
+}
+
 .sectionone-container {
   padding-top: clamp(4rem, 4vw, 32px);
+  padding-bottom: clamp(16px, 4vw, 32px);
   padding-left: clamp(16px, 4vw, 32px);
   padding-right: clamp(16px, 4vw, 32px);
-  width: 90vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +23,7 @@
 .sectionone-container-right-header {
   opacity: 0;
   transition: opacity 0.3s;
+  color: var(--primary-color);
 }
 
 .sectionone-container-left {
@@ -34,37 +42,38 @@
 }
 
 .sectionone-container-right-header {
-  padding: 0.5rem 4rem 0.5rem 5rem;
+  padding: 1rem 5rem 1rem 5rem;
 }
 
 .sectionone-container-right-text {
-  padding: 1rem 4rem 0.5rem 5rem;
+  padding: 1rem 5rem 1rem 5rem;
+  color: var(--neutral-color);
 }
 
 .sectionone-container-right-button-div {
   display: flex;
   justify-content: left;
   padding-top: 5rem;
-  padding: 1rem 4rem 0.5rem 5rem;
+  padding: 1rem 5rem 1rem 5rem;
 }
 
 .sectionone-container-right-button {
   width: clamp(4rem, 7.077rem + 1.231vw, 12rem);
   font-size: 500;
   border-radius: 7px;
-  border-color: #8d7a69;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
   border-width: 2px;
-  background-color: #fefae0;
+  background-color: var(--primary-color);
   padding: 2rem clamp(2rem, 7.077rem + 1.231vw, 7rem);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
-  0 2px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .sectionone-container-right-button:hover {
-  background-color: #8d7a69;
-  border-color: #fefae0;
-  color: #fefae0;
+  background-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
   transition: 0.4s ease-in;
 }
 
@@ -82,7 +91,7 @@
     padding: 1rem 2rem 0.5rem 2rem;
     transition: 0.3s ease-in-out;
   }
-  .sectionone-container-left{
+  .sectionone-container-left {
     display: none;
     transition: 0.6s ease-in-out;
   }

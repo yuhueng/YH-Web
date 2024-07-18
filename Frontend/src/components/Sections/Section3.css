@@ -1,21 +1,23 @@
+.sectionthree-section {
+  background-color: var(--secondary-color);
+}
+
 .sectionthree-container {
-    padding-top: clamp(4rem, 4vw, 32px);
-    padding-bottom: clamp(16px, 4vw, 32px);
-    padding-left: clamp(16px, 4vw, 32px);
-    padding-right: clamp(16px, 4vw, 32px);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  padding-top: clamp(4rem, 4vw, 32px);
+  padding-bottom: clamp(16px, 4vw, 32px);
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .lol{
-    font-size: 100px;
-  }
+.lol {
+  font-size: 100px;
+}
 
-
-
-  /* SectionFour ContactMe Reference */
+/* SectionFour ContactMe Reference */
 .sectionfour-anchor {
   height: 70px;
   pointer-events: none;

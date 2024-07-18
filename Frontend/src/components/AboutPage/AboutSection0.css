@@ -1,13 +1,16 @@
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css");
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css");
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css");
 
 * {
   box-sizing: border-box;
 }
 
+.aboutsectionzero-section {
+  background-color: var(--secondary-color);
+}
 
-.aboutsectionzero-container{
+.aboutsectionzero-container {
   padding-top: clamp(16px, 8vw, 36px);
   padding-bottom: clamp(16px, 4vw, 36px);
   padding-left: clamp(2rem, 4vw, 4rem);
@@ -18,12 +21,22 @@
   gap: 10px;
 }
 
-.aboutsectionzero-gallery{
+.aboutsectionzero-header {
+  color: var(--primary-color);
+}
+
+.aboutsectionzero-padding {
   border-width: 1px;
   border-radius: 5px;
-  border-color: #8d7a69;
+  border-color: var(--primary-color);
+  padding: 2px;
   width: 90vw;
-  padding: 6px ;
+  padding: 6px;
+}
+
+.aboutsectionzero-gallery {
+  background-color: var(--primary-color);
+  padding: 10px;
 }
 
 .img-responsive {
@@ -69,8 +82,4 @@
   color: #0056b3;
   background-color: transparent;
   border-color: #0056b3;
-}
-
-@media only screen and (max-width: 767px) {
-
 }

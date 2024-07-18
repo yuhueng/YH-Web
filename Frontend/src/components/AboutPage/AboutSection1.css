@@ -1,30 +1,38 @@
 .header-margin {
-    height: 70px;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
-.aboutsectionone-container {
-    padding-top: clamp(16px, 8vw, 36px);
-    padding-bottom: clamp(16px, 4vw, 36px);
-    padding-left: clamp(2rem, 4vw, 4rem);
-    padding-right: clamp(2rem, 4vw, 4rem);
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  height: 70px;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: var(--primary-color);
 }
 
+.aboutsectionone-section {
+  background-color: var(--primary-color);
+}
+
+.aboutsectionone-container {
+  padding-top: clamp(16px, 8vw, 36px);
+  padding-bottom: clamp(16px, 4vw, 36px);
+  padding-left: clamp(2rem, 4vw, 4rem);
+  padding-right: clamp(2rem, 4vw, 4rem);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.aboutsectionone-header {
+  color: var(--secondary-color);
+}
 
 .tabs-container {
-    width: 90vw;
-    padding-top: clamp(16px, 4vw, 36px);
-    padding-bottom: clamp(16px, 4vw, 36px);
-    padding-left: clamp(16px, 4vw, 32px);
-    padding-right: clamp(16px, 4vw, 32px);
-    border-width: 1px;
-    border-radius: 5px;
-    border-color: #8d7a69;
+  width: 90vw;
+  padding-top: clamp(16px, 4vw, 36px);
+  padding-bottom: clamp(16px, 4vw, 36px);
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: var(--secondary-color);
 }
 
 .tab-icon {
@@ -36,9 +44,13 @@
 }
 
 .tab-icon-active {
-color: #8d7a69;
+  color: var(--secondary-color);
 }
 
 .customized-tabs .ant-tabs-ink-bar {
-  background-color: #8d7a69; 
+  background-color: var(--secondary-color);
+}
+
+.tab-desc {
+  color: var(--secondary-color);
 }
