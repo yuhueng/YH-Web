@@ -11,5 +11,7 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    border-width: 1px;
+    border-color:#99a083 ;
   }
   
