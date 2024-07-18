@@ -35,10 +35,15 @@ function ThreeModel() {
       <Canvas className="canvas-fullscreen">
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} intensity={1} />
-        <PerspectiveCamera makeDefault position={[-10, 17, 3]} fov={35} />
+        <PerspectiveCamera makeDefault position={[-10, 17, 3]} fov={30} />
         <CameraSetup />
         <Model />
-        <OrbitControls ref={controlsRef} target={[-6, 15.5, -3]} />
+        <OrbitControls
+        ref={controlsRef}
+        target={[-6, 15.5, -3]}          
+        minDistance={0.01} 
+        maxDistance={100} 
+        />
         <Environment preset="sunset" />
       </Canvas>
     </div>
