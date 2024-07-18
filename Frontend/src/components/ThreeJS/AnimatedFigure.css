@@ -1,17 +1,24 @@
 .fullscreen-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.canvas-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #99a083;
+}
+
+@media only screen and (max-width: 552px) {
+  .fullscreen-container {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 40vh;
   }
-  
-  .canvas-fullscreen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    border-width: 1px;
-    border-color:#99a083 ;
-  }
-  
+}
