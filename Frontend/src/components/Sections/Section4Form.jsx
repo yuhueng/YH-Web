@@ -1,5 +1,6 @@
 import "./Section4Form.css";
 import { useForm, Controller } from "react-hook-form";
+import axios from "axios";
 
 const Section4Form = () => {
   const { control, handleSubmit } = useForm({
@@ -11,7 +12,22 @@ const Section4Form = () => {
     },
   });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    try {
+      const response = await axios.post("http://localhost:5000/submit", data);
+      console.log("Form data submitted successfully:", response.data);
+      alert("Message sent successfully!");
+    } catch (error) {
+      if (error.response && error.response.status === 400) {
+        alert("Invalid email address");
+      } else {
+        alert(
+          "There was an error submitting the form. Please try again later."
+        );
+      }
+    }
+  };
+
   return (
     <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group">

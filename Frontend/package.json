@@ -21,6 +21,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "animejs": "^3.2.2",
     "antd": "^5.19.1",
+    "axios": "^1.7.2",
     "flickity": "^3.0.0",
     "flickity-imagesloaded": "^2.0.0",
     "flickr-justified-gallery": "^2.2.0",
