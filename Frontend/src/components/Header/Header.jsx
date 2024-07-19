@@ -72,7 +72,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="images/Yu Hueng Resume (July 2024).pdf"
+                      href="images/Ng Yu Hueng Resume (July 2024).pdf"
                       download="Ng Yu Hueng Resume (July).pdf"
                       className="header-right-navitem-special"
                     >

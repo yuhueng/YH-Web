@@ -69,7 +69,7 @@
 .project-desc-tag {
   width: 100%;
   text-decoration: underline;
-  padding-top: 1rem;
+  padding-top: clamp(1.5rem, 1.154rem + 0.462vw, 3rem);
   color: var(--secondary-color);
 }
 .project-desc {

@@ -85,7 +85,18 @@ const IndividualProjects = ({ project }) => {
                     <i className="icon-deco fab fa-linkedin"></i>
                   </a>
                 )}
-                {!project.github && !project.linkedin && (
+                {project.youtube && (
+                  <a
+                    className="social-link"
+                    href={project.youtube}
+                    title="Youtube"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon-deco fab fa-youtube"></i>
+                  </a>
+                )}
+                {!project.github && !project.linkedin && !project.youtube && (
                   <p className="project-desc">{project.nosocials}</p>
                 )}
               </div>
@@ -142,7 +153,18 @@ const IndividualProjects = ({ project }) => {
                     <i className="icon-deco fab fa-linkedin"></i>
                   </a>
                 )}
-                {!project.github && !project.linkedin && (
+                {project.youtube && (
+                  <a
+                    className="social-link"
+                    href={project.youtube}
+                    title="Youtube"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon-deco fab fa-youtube"></i>
+                  </a>
+                )}
+                {!project.github && !project.linkedin && !project.youtube && (
                   <p className="project-desc">{project.nosocials}</p>
                 )}
               </div>
@@ -180,6 +202,7 @@ IndividualProjects.propTypes = {
     nosocials: PropTypes.string,
     github: PropTypes.string,
     linkedin: PropTypes.string,
+    youtube: PropTypes.string,
     desc1: PropTypes.string.isRequired,
     desc2: PropTypes.string.isRequired,
     techstack: PropTypes.arrayOf(PropTypes.string),
