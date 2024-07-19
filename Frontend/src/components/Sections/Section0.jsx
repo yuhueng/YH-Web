@@ -16,7 +16,7 @@ const Section0 = () => {
         anime({
           targets: el,
           translateX: ["-500px", "0px"],
-          duration: 4500,
+          duration: 3000,
         });
       },
     });
@@ -25,7 +25,7 @@ const Section0 = () => {
         anime({
           targets: el,
           translateY: ["500px", "0px"],
-          duration: 5000,
+          duration: 3000,
         });
       },
     });

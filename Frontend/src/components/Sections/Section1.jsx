@@ -18,7 +18,7 @@ const Section1 = () => {
     anime({
       targets: ".sectionone-container-left",
       translateX: ["-400px", "0px"],
-      duration: 5000,
+      duration: 3000,
       opacity: 1,
     });
 
@@ -26,20 +26,20 @@ const Section1 = () => {
     anime({
       targets: ".sectionone-container-right-header",
       translateX: ["400px", "0px"],
-      duration: 5000,
+      duration: 3000,
       opacity: 1,
     });
 
     anime({
       targets: ".sectionone-container-right-text",
       translateX: ["400px", "0px"],
-      duration: 5000,
+      duration: 3000,
       opacity: 1,
     });
     anime({
       targets: ".sectionone-container-right-button-div",
       translateY: ["400px", "0px"],
-      duration: 5000,
+      duration: 3000,
       opacity: 1,
     });
   }

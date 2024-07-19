@@ -32,7 +32,8 @@ const projects = [
     date: "Jul 2024 - Aug 2024",
     nosocials: "Not Done",
     github: "https://github.com/yuhueng/YH-Web",
-    linkedin: "",
+    linkedin:
+      "https://www.linkedin.com/posts/ngyuhueng_webdevelopment-mernstack-newwebsite-activity-7220129956318564356-emA4?utm_source=share&utm_medium=member_desktop",
     youtube: "",
     desc1:
       "Developed a full-stack personal portfolio website with a focus on creating an aesthetic and user-friendly UI. The front-end was built using JavaScript, HTML, CSS, and React, with styling enhanced by Tailwind CSS. The back-end was implemented using Node.js and Express.js, and the data is managed with a MongoDB database. This project demonstrates my ability to create a visually appealing, responsive, and interactive web application.",
