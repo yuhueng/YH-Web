@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const Section1 = () => {
   function animateAll() {
-    // Animation for .sectionone-about
     anime({
       targets: ".sectionone-about",
       translateY: ["-400px", "0px"],
@@ -14,7 +13,6 @@ const Section1 = () => {
       opacity: 1,
     });
 
-    // Animation for .sectionone-container-left
     anime({
       targets: ".sectionone-container-left",
       translateX: ["-400px", "0px"],
@@ -22,7 +20,6 @@ const Section1 = () => {
       opacity: 1,
     });
 
-    // Animation for .sectionone-container-right-header
     anime({
       targets: ".sectionone-container-right-header",
       translateX: ["400px", "0px"],

@@ -89,14 +89,6 @@ const Section0 = () => {
               </a>
             </div>
           </div>
-
-          {/* <div className="sectionzero-container-right">
-            <img
-              src="images/nyhpic3.jpg"
-              alt="NYHPIC3"
-              className="sectionzero-container-right-img"
-            /> */}
-
           <div className="sectionzero-container-right">
             <ThreeModel />
           </div>

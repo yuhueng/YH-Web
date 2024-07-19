@@ -29,9 +29,9 @@
 
 .individualproject-container {
   display: grid;
-  place-items: center; /* Center both horizontally and vertically */
+  place-items: center;
 }
-/* Individual Project CSS */
+
 .project {
   align-items: center;
   transition: transform 0.3s, opacity 0.3s;
