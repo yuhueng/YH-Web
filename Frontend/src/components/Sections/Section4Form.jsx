@@ -3,7 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 
 const Section4Form = () => {
-  const { control, handleSubmit } = useForm({
+  const { control, handleSubmit, reset } = useForm({
     defaultValues: {
       name: "",
       email: "",
@@ -21,6 +21,7 @@ const Section4Form = () => {
       const response = await api.post("/submit", data);
       console.log("Form data submitted successfully:", response.data);
       alert("Message sent successfully!");
+      reset();
     } catch (error) {
       if (error.response && error.response.status === 400) {
         alert("Invalid email address");
