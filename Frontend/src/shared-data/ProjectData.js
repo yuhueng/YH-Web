@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     title: "RubyOnRails WebApp (DBS DocCheck)",
-    image: "images/leftoverchefposter.jpeg",
+    image: "images/railsproject.png",
     date: "May 2024 to Aug 2024",
     nosocials: "Due to NDA, unable to show repository",
     github: "",
@@ -49,7 +49,7 @@ const projects = [
   {
     id: 3,
     title: "Java Application (LeftoverChef)",
-    image: "images/leftoverchefposter.jpeg",
+    image: "images/leftoverchef.png",
     date: "Jan 2023 - Apr 2024",
     nosocials: "",
     github: "https://github.com/yuhueng/LeftOverChef",
