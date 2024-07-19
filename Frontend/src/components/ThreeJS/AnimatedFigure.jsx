@@ -1,10 +1,15 @@
-import React, { useRef, useEffect } from 'react';
-import { Canvas, useThree, useFrame } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
+import React, { useRef, useEffect } from "react";
+import { Canvas, useThree, useFrame } from "@react-three/fiber";
+import {
+  OrbitControls,
+  useGLTF,
+  Environment,
+  PerspectiveCamera,
+} from "@react-three/drei";
 import "./AnimatedFigure.css";
 
 function Model() {
-  const { scene } = useGLTF('TestYH5.glb');
+  const { scene } = useGLTF("Yuhueng.glb");
   return <primitive object={scene} />;
 }
 
@@ -39,10 +44,10 @@ function ThreeModel() {
         <CameraSetup />
         <Model />
         <OrbitControls
-        ref={controlsRef}
-        target={[-6, 15.5, -3]}          
-        minDistance={0.01} 
-        maxDistance={100} 
+          ref={controlsRef}
+          target={[-6, 15.5, -3]}
+          minDistance={0.01}
+          maxDistance={100}
         />
         <Environment preset="sunset" />
       </Canvas>
