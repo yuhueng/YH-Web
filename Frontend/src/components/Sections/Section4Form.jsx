@@ -12,9 +12,13 @@ const Section4Form = () => {
     },
   });
 
+  const api = axios.create({
+    baseURL: import.meta.env.VITE_BACKEND,
+  });
+
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("http://localhost:5000/submit", data);
+      const response = await api.post("/submit", data);
       console.log("Form data submitted successfully:", response.data);
       alert("Message sent successfully!");
     } catch (error) {
