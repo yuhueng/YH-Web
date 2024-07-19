@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Flickity from "flickity";
 import LightGallery from "lightgallery";
 import lgThumbnail from "lightgallery/plugins/thumbnail";

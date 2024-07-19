@@ -1,8 +1,10 @@
 import "./Section4Form.css";
 import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
+import { useState } from "react";
 
 const Section4Form = () => {
+  const [isCooldown, setIsCooldown] = useState(false);
   const { control, handleSubmit, reset } = useForm({
     defaultValues: {
       name: "",
@@ -17,11 +19,13 @@ const Section4Form = () => {
   });
 
   const onSubmit = async (data) => {
+    setIsCooldown(true);
     try {
       const response = await api.post("/submit", data);
       console.log("Form data submitted successfully:", response.data);
       alert("Message sent successfully!");
       reset();
+      setTimeout(() => setIsCooldown(false), 1000);
     } catch (error) {
       if (error.response && error.response.status === 400) {
         alert("Invalid email address");
@@ -103,8 +107,8 @@ const Section4Form = () => {
       </div>
 
       <div className="form-group col">
-        <button className="form-button" type="submit">
-          Send Message
+        <button className="form-button" type="submit" disabled={isCooldown}>
+          {isCooldown ? "Please wait..." : "Send Message"}
         </button>
       </div>
     </form>
