@@ -8,11 +8,13 @@ const Header = () => {
       <div className="max-w-screen-2xl mx-auto">
         <div className="flex items-center justify-between">
           <div className="header-left">
-            <img
-              src="images/nyhlogo.png"
-              alt="Ng Yu Hueng"
-              className="header-logo"
-            />
+            <Link to={`/`}>
+              <img
+                src="images/nyhlogo.png"
+                alt="Ng Yu Hueng"
+                className="header-logo"
+              />
+            </Link>
           </div>
           <nav className="header-right">
             <ul className="mobileDesktop">

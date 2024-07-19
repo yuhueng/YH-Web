@@ -79,9 +79,11 @@ const Section1 = () => {
               </p>
               <div className="sectionone-container-right-button-div">
                 <div className="sectionone-container-right-button-div-center">
-                  <a className="sectionone-container-right-button" href="#">
-                    <Link to={`/About`}>Find out more about me!</Link>
-                  </a>
+                  <Link to={`/About`}>
+                    <a className="sectionone-container-right-button">
+                      Find out more about me!
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
