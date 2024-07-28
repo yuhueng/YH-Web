@@ -54,8 +54,8 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="images/Yu Hueng Resume (July 2024).pdf"
-                      download="Ng Yu Hueng Resume (July).pdf"
+                      href="Ng Yu Hueng Resume (July 2024).pdf"
+                      download="Ng Yu Hueng Resume (July 2024).pdf"
                       className="header-right-navitem-special"
                     >
                       Download CV
@@ -72,8 +72,8 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="images/Ng Yu Hueng Resume (July 2024).pdf"
-                      download="Ng Yu Hueng Resume (July).pdf"
+                      href="Ng Yu Hueng Resume (July 2024).pdf"
+                      download="Ng Yu Hueng Resume (July 2024).pdf"
                       className="header-right-navitem-special"
                     >
                       Download CV
