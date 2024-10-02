@@ -54,8 +54,8 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="Ng Yu Hueng Resume (July 2024).pdf"
-                      download="Ng Yu Hueng Resume (July 2024).pdf"
+                      href="Ng Yu Hueng Resume (Oct).pdf"
+                      download="Ng Yu Hueng Resume (Oct).pdf"
                       className="header-right-navitem-special"
                     >
                       Download CV
