@@ -33,6 +33,12 @@ export const IndividualProjects = ({ project }) => {
   });
 
   const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const hasLinks =
+    project.github ||
+    project.linkedin ||
+    project.youtube ||
+    project.website ||
+    project.blog;
 
   return (
     <motion.div
@@ -64,71 +70,68 @@ export const IndividualProjects = ({ project }) => {
                   <p className="project-desc">{project.desc2}</p>
                 </div>
               )}
-              <h6 className="project-desc-tag">Links:</h6>
-              <div className="project-links flex flex-row">
-                {project.github && (
-                  <a
-                    className="social-link"
-                    href={project.github}
-                    title="GitHub"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fab fa-github-square"></i>
-                  </a>
-                )}
-                {project.linkedin && (
-                  <a
-                    className="social-link"
-                    href={project.linkedin}
-                    title="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fab fa-linkedin"></i>
-                  </a>
-                )}
-                {project.youtube && (
-                  <a
-                    className="social-link"
-                    href={project.youtube}
-                    title="Youtube"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fab fa-youtube"></i>
-                  </a>
-                )}
-                {project.website && (
-                  <a
-                    className="social-link"
-                    href={project.website}
-                    title="Website"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fas fa-globe"></i>
-                  </a>
-                )}
-                {project.blog && (
-                  <a
-                    className="social-link"
-                    href={project.blog}
-                    title="Blog"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fas fa-blog"></i>
-                  </a>
-                )}
-                {!project.github &&
-                  !project.linkedin &&
-                  !project.youtube &&
-                  !project.website &&
-                  !project.blog && (
-                    <p className="project-desc">{project.nosocials}</p>
-                  )}
-              </div>
+              {hasLinks && (
+                <>
+                  <h6 className="project-desc-tag">Links:</h6>
+                  <div className="project-links flex flex-row">
+                    {project.github && (
+                      <a
+                        className="social-link"
+                        href={project.github}
+                        title="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fab fa-github-square"></i>
+                      </a>
+                    )}
+                    {project.linkedin && (
+                      <a
+                        className="social-link"
+                        href={project.linkedin}
+                        title="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fab fa-linkedin"></i>
+                      </a>
+                    )}
+                    {project.youtube && (
+                      <a
+                        className="social-link"
+                        href={project.youtube}
+                        title="Youtube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fab fa-youtube"></i>
+                      </a>
+                    )}
+                    {project.website && (
+                      <a
+                        className="social-link"
+                        href={project.website}
+                        title="Website"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fas fa-globe"></i>
+                      </a>
+                    )}
+                    {project.blog && (
+                      <a
+                        className="social-link"
+                        href={project.blog}
+                        title="Blog"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fas fa-blog"></i>
+                      </a>
+                    )}
+                  </div>
+                </>
+              )}
               <h6 className="project-desc-tag">Technologies Used:</h6>
               <div className="techstack-icons">
                 {project.techstack.map((techstackicon) => (
@@ -161,71 +164,68 @@ export const IndividualProjects = ({ project }) => {
                 </div>
               )}
 
-              <h6 className="project-desc-tag">Links:</h6>
-              <div className="project-links flex flex-row">
-                {project.github && (
-                  <a
-                    className="social-link"
-                    href={project.github}
-                    title="GitHub"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fab fa-github-square "></i>
-                  </a>
-                )}
-                {project.linkedin && (
-                  <a
-                    className="social-link"
-                    href={project.linkedin}
-                    title="LinkedIn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fab fa-linkedin"></i>
-                  </a>
-                )}
-                {project.youtube && (
-                  <a
-                    className="social-link"
-                    href={project.youtube}
-                    title="Youtube"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fab fa-youtube"></i>
-                  </a>
-                )}
-                {project.website && (
-                  <a
-                    className="social-link"
-                    href={project.website}
-                    title="Website"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fas fa-globe"></i>
-                  </a>
-                )}
-                {project.blog && (
-                  <a
-                    className="social-link"
-                    href={project.blog}
-                    title="Blog"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="icon-deco fas fa-blog"></i>
-                  </a>
-                )}
-                {!project.github &&
-                  !project.linkedin &&
-                  !project.youtube &&
-                  !project.website &&
-                  !project.blog && (
-                    <p className="project-desc">{project.nosocials}</p>
-                  )}
-              </div>
+              {hasLinks && (
+                <>
+                  <h6 className="project-desc-tag">Links:</h6>
+                  <div className="project-links flex flex-row">
+                    {project.github && (
+                      <a
+                        className="social-link"
+                        href={project.github}
+                        title="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fab fa-github-square "></i>
+                      </a>
+                    )}
+                    {project.linkedin && (
+                      <a
+                        className="social-link"
+                        href={project.linkedin}
+                        title="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fab fa-linkedin"></i>
+                      </a>
+                    )}
+                    {project.youtube && (
+                      <a
+                        className="social-link"
+                        href={project.youtube}
+                        title="Youtube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fab fa-youtube"></i>
+                      </a>
+                    )}
+                    {project.website && (
+                      <a
+                        className="social-link"
+                        href={project.website}
+                        title="Website"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fas fa-globe"></i>
+                      </a>
+                    )}
+                    {project.blog && (
+                      <a
+                        className="social-link"
+                        href={project.blog}
+                        title="Blog"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="icon-deco fas fa-blog"></i>
+                      </a>
+                    )}
+                  </div>
+                </>
+              )}
               <h6 className="project-desc-tag">Technologies Used:</h6>
               <div className="techstack-icons">
                 {project.techstack.map((techstackicon) => (
@@ -258,7 +258,6 @@ IndividualProjects.propTypes = {
     role: PropTypes.string,
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
-    nosocials: PropTypes.string,
     github: PropTypes.string,
     linkedin: PropTypes.string,
     youtube: PropTypes.string,
