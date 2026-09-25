@@ -25,7 +25,7 @@ const Section2 = () => {
   );
 };
 
-const IndividualProjects = ({ project }) => {
+export const IndividualProjects = ({ project }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -43,6 +43,9 @@ const IndividualProjects = ({ project }) => {
       {project.id % 2 === 0 ? (
         <div className="project">
           <h4 className="project-title">{project.title}</h4>
+          {project.role && (
+            <p className="project-date text-center">{project.role}</p>
+          )}
           <p className="project-date">{project.date}</p>
           <div className="project-main">
             <div className="projectimage-container">
@@ -96,9 +99,35 @@ const IndividualProjects = ({ project }) => {
                     <i className="icon-deco fab fa-youtube"></i>
                   </a>
                 )}
-                {!project.github && !project.linkedin && !project.youtube && (
-                  <p className="project-desc">{project.nosocials}</p>
+                {project.website && (
+                  <a
+                    className="social-link"
+                    href={project.website}
+                    title="Website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon-deco fas fa-globe"></i>
+                  </a>
                 )}
+                {project.blog && (
+                  <a
+                    className="social-link"
+                    href={project.blog}
+                    title="Blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon-deco fas fa-blog"></i>
+                  </a>
+                )}
+                {!project.github &&
+                  !project.linkedin &&
+                  !project.youtube &&
+                  !project.website &&
+                  !project.blog && (
+                    <p className="project-desc">{project.nosocials}</p>
+                  )}
               </div>
               <h6 className="project-desc-tag">Technologies Used:</h6>
               <div className="techstack-icons">
@@ -116,6 +145,9 @@ const IndividualProjects = ({ project }) => {
       ) : (
         <div className="project">
           <h4 className=" project-title">{project.title}</h4>
+          {project.role && (
+            <p className="project-date text-center">{project.role}</p>
+          )}
           <p className="project-date">{project.date}</p>
           <div className="project-main">
             <div className="individualproject-desc flex flex-col">
@@ -164,9 +196,35 @@ const IndividualProjects = ({ project }) => {
                     <i className="icon-deco fab fa-youtube"></i>
                   </a>
                 )}
-                {!project.github && !project.linkedin && !project.youtube && (
-                  <p className="project-desc">{project.nosocials}</p>
+                {project.website && (
+                  <a
+                    className="social-link"
+                    href={project.website}
+                    title="Website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon-deco fas fa-globe"></i>
+                  </a>
                 )}
+                {project.blog && (
+                  <a
+                    className="social-link"
+                    href={project.blog}
+                    title="Blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon-deco fas fa-blog"></i>
+                  </a>
+                )}
+                {!project.github &&
+                  !project.linkedin &&
+                  !project.youtube &&
+                  !project.website &&
+                  !project.blog && (
+                    <p className="project-desc">{project.nosocials}</p>
+                  )}
               </div>
               <h6 className="project-desc-tag">Technologies Used:</h6>
               <div className="techstack-icons">
@@ -197,12 +255,15 @@ IndividualProjects.propTypes = {
   project: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
+    role: PropTypes.string,
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     nosocials: PropTypes.string,
     github: PropTypes.string,
     linkedin: PropTypes.string,
     youtube: PropTypes.string,
+    website: PropTypes.string,
+    blog: PropTypes.string,
     desc1: PropTypes.string.isRequired,
     desc2: PropTypes.string.isRequired,
     techstack: PropTypes.arrayOf(PropTypes.string),
