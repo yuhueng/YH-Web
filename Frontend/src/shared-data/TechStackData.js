@@ -31,6 +31,10 @@ const techstackicons = {
     flask: "images/icons/flask.svg",
     huggingface: "images/icons/huggingface.svg",
     typescript: "images/icons/typescript.svg",
+    langchain: "images/icons/langchain.svg",
+    langgraph: "images/icons/langgraph.svg",
+    crewai: "images/icons/crewai.svg",
+    mcp: "images/icons/mcp.svg",
   };
   export default techstackicons;
   
