@@ -15,6 +15,12 @@
 .sectionfour-contacts {
   color: var(--primary-color);
 }
+.sectionfour-disclaimer {
+  color: var(--secondary-color2);
+  font-size: clamp(2.5rem, 1.875rem + 0.781vw, 3.5rem);
+  font-style: italic;
+  margin-top: 1rem;
+}
 
 .section4-form {
   width: 80%;
