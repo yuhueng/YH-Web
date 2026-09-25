@@ -9,6 +9,10 @@ const Section4 = () => {
           <div className="sectionfour-contacts text-center underline underline-offset-8">
             <h2>Contact Me</h2>
           </div>
+          <p className="sectionfour-disclaimer text-center">
+            Sorry this probably doesnt work :) I stopped paying for the
+            Backend&nbsp;:(
+          </p>
           <div className="section4-form">
             <div className="section4form-left">
               <Section4Form />
