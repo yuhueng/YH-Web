@@ -66,13 +66,31 @@ const Section1 = () => {
                 Hello! Once again, I am Yu Hueng
               </h3>
               <p className="sectionone-container-right-text">
-                Currently studying <u>Computer Science and Design (CSD)</u> at
-                Singapore University of Technology and Design (SUTD).
+                <u>Computer Science and Design</u> graduate from the Singapore
+                University of Technology and Design (May 2026), specialising in
+                Data Analytics with an AI minor.
               </p>
               <p className="sectionone-container-right-text">
-                I have developed a passion for coding over the years, at the
-                same time, also cultivated a love for traveling and exploring
-                new cultures.
+                I work at the intersection of AI and application development.
+                Building the APIs, pipelines, and infrastructure that turn
+                models into products that hold up in production. Anyone can get
+                a demo working. The engineering is in what happens after:
+                latency under load, evaluation that tells you the truth, and
+                failure modes you planned for instead of discovered.
+              </p>
+              <p className="sectionone-container-right-text">
+                Lately my focus has been Agentic AI. Systems that plan, call
+                tools, and act rather than just answer. It is the most
+                interesting problem space I have worked in, because the hard
+                parts are not the model. They are orchestration, reliability,
+                and knowing when the agent should stop.
+              </p>
+              <p className="sectionone-container-right-text">
+                The field moves faster than any curriculum, so I keep close to
+                it and build with what is current rather than what I was taught.
+                I gravitate toward lean, technical teams and end-to-end
+                ownership, where whoever designs the system is also accountable
+                for it running.
               </p>
               <div className="sectionone-container-right-button-div">
                 <div className="sectionone-container-right-button-div-center">
