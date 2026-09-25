@@ -66,7 +66,7 @@ const Section0 = () => {
               </svg>
             </div>
             <div className="sectionzero-container-top-3">
-              <h2>An Aspiring Software Engineer</h2>
+              <h2>A Software Engineer</h2>
             </div>
             <div className="sectionzero-container-bottom">
               <a
