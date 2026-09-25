@@ -18,7 +18,7 @@ const Section2 = () => {
               <IndividualProjects key={project.id} project={project} />
             ))}
           </div>
-          <div id="" className="sectionthree-anchor"></div>
+          <div id="certifications" className="sectionthree-anchor"></div>
         </div>
       </div>
     </div>

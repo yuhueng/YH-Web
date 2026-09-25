@@ -54,6 +54,14 @@ const Header = () => {
                   </li>
                   <li>
                     <a
+                      href="#certifications"
+                      className="header-right-navitem mobileDesktop-items "
+                    >
+                      Certifications
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="#contacts"
                       className="header-right-navitem mobileDesktop-items "
                     >
