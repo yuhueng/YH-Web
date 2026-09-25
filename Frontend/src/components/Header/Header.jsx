@@ -38,6 +38,14 @@ const Header = () => {
                   </li>
                   <li>
                     <a
+                      href="#experience"
+                      className="header-right-navitem mobileDesktop-items "
+                    >
+                      Experience
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="#projects"
                       className="header-right-navitem mobileDesktop-items "
                     >
@@ -54,8 +62,8 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="Ng Yu Hueng Resume (Oct).pdf"
-                      download="Ng Yu Hueng Resume (Oct).pdf"
+                      href="NgYuHueng_CV.pdf"
+                      download="NgYuHueng_CV.pdf"
                       className="header-right-navitem-special"
                     >
                       Download CV
@@ -72,8 +80,8 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="Ng Yu Hueng Resume (Oct).pdf"
-                      download="Ng Yu Hueng Resume (Oct).pdf"
+                      href="NgYuHueng_CV.pdf"
+                      download="NgYuHueng_CV.pdf"
                       className="header-right-navitem-special"
                     >
                       Download CV

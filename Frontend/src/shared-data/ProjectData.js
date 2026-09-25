@@ -1,6 +1,60 @@
 const projects = [
   {
     id: 1,
+    title: "Capstone Project with ESGpedia (Sustainability Intelligence Platform)",
+    image: "images/esgpedia.jpg",
+    date: "Sep 2025 to May 2026",
+    nosocials: "",
+    github: "",
+    linkedin: "",
+    youtube: "",
+    website:
+      "https://capstoneshowcase.sutd.edu.sg/project/proj-s11-esgpedia-sustainability-intelligence-platform/",
+    desc1:
+      "Built an ESG data extraction pipeline on Databricks using LLMs (Qwen-VL, Perplexity, OpenAI) to process sustainability reports from SGX-, Bursa Malaysia- and IDX-listed companies at ~97% field completeness and 86.1% extraction accuracy. Engineered a data post-processing layer standardizing extracted ESG metrics into common units and a comparable schema. Shipped a Flask/FastAPI backend with S3 integration, powering an extraction dashboard, anomaly detection on ESG metrics, and an AI chatbot for ESGpedia’s sustainability intelligence platform.",
+    desc2: "",
+    techstack: [
+      "aws",
+      "databricks",
+      "python",
+      "javascript_3d",
+      "flask",
+      "fastapi",
+      "openai",
+    ],
+  },
+  {
+    id: 2,
+    title: "Natural Language Processing Project (Singlish Chatbot)",
+    image: "images/nlpproject.jpg",
+    date: "Sep 2025 to Dec 2025",
+    nosocials: "",
+    github: "https://github.com/yuhueng/NLP-Project",
+    linkedin: "",
+    youtube: "",
+    website: "https://yh-singlish-chatbot.vercel.app",
+    desc1:
+      "Fine-tuned Qwen3-4B into a Singlish base model using 4-bit QLoRA on a self-constructed dataset, with perplexity of 16.26. Trained 4 persona adapters evaluated via perplexity and human evaluation, deployed via HuggingFace ZeroGPU Spaces. Built a dating chat simulator (React, FastAPI) with LionGuard content moderation, deployed on Vercel and Render.",
+    desc2: "",
+    techstack: ["python", "javascript_3d", "huggingface", "react", "fastapi"],
+  },
+  {
+    id: 3,
+    title: "FabWatcher (Cloud & IoT Project)",
+    image: "images/fabwatcher.jpg",
+    date: "Sep 2025 to Dec 2025",
+    nosocials: "No public links available",
+    github: "",
+    linkedin: "",
+    youtube: "",
+    website: "",
+    desc1:
+      "Designed a 3D printer management system with booking-triggered workflows via AWS EventBridge, Lambda, and MQTT. Implemented real-time print failure detection via YOLO for anomaly classification, streaming telemetry to DynamoDB. Deployed on AWS with a containerized EC2 backend and a static S3 frontend, with a live admin dashboard.",
+    desc2: "",
+    techstack: ["aws", "dynamodb", "c", "python", "javascript_3d"],
+  },
+  {
+    id: 4,
     title: "RubyOnRails WebApp (DBS DocCheck)",
     image: "images/railsproject.png",
     date: "May 2024 to Aug 2024",
@@ -26,7 +80,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: "React WebApp (Personal Portfolio Website)",
     image: "images/personalportfolio.png",
     date: "Jul 2024 - Aug 2024",
@@ -50,7 +104,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     title: "Java Application (LeftoverChef)",
     image: "images/leftoverchef.png",
     date: "Jan 2023 - Apr 2024",
@@ -66,7 +120,7 @@ const projects = [
     techstack: ["java", "firebase", "openai", "github"],
   },
   {
-    id: 4,
+    id: 7,
     title: "TemasekXSUTD Hackathon (GenAI)",
     image: "images/GenAI2.jpg",
     nosocials: "",

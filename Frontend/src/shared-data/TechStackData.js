@@ -25,6 +25,12 @@ const techstackicons = {
     tailwind_css: "images/icons/tailwind-css.svg",
     azure: "images/icons/azure.svg",
     express: "images/icons/express.svg",
+    databricks: "images/icons/databricks.svg",
+    dynamodb: "images/icons/dynamodb.svg",
+    fastapi: "images/icons/fastapi.svg",
+    flask: "images/icons/flask.svg",
+    huggingface: "images/icons/huggingface.svg",
+    typescript: "images/icons/typescript.svg",
   };
   export default techstackicons;
   
