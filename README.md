@@ -1,4 +1,3 @@
-
 # Ng Yu Hueng's Personal Portfolio Website
 
 Welcome to my personal portfolio website! This project showcases my work, skills, and projects. It is built using the MERN stack and features various animations, a contact form, a photo gallery, and a 3D model.
@@ -12,7 +11,7 @@ This personal portfolio website is a comprehensive showcase of my work and skill
 - **Contact Form:** Allows visitors to get in touch with me directly through the website. The form data is validated using Abstract API and then stored in MongoDB Atlas. An email notification is sent to me via Nodemailer.
 - **Photo Gallery:** Displays a collection of my photography work, implemented using Lightgallery.
 - **3D Model:** A dynamic 3D model created with ThreeJS to enhance visual appeal.
-- **Animations:** Smooth and engaging animations using AnimeJS and ScrollReveal for an interactive user experience.
+- **Animations:** Smooth and engaging animations using AnimeJS and ScrollReveal for an interactive user experience. Yes, I paid for this :)
 
 ## Technologies Used
 
